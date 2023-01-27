@@ -1,0 +1,25 @@
+/* Variables for portfolio's fonts and color themes */
+
+:root{
+  /* Colors */
+  --mainBackground: #1D1E26;
+  --secondaryBackground: #5E35F2;
+  --accentOne:#8C5CF2;
+  --accentTwo:#E4CEF2;
+  --accentThree: #F20587;
+  --white: rgb(240, 240, 240);
+  --black: rgb(14, 14, 14); 
+
+  /* Fonts */
+  --headingFont: font-family: 'Hind', sans-serif;
+  --bodyFont: font-family: 'Montserrat', sans-serif;
+  /* --font-size: ; */
+}
+
+/* Universal box sizing with inheritance */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
