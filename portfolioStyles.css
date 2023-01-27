@@ -11,8 +11,8 @@
   --black: rgb(14, 14, 14); 
 
   /* Fonts */
-  --headingFont: font-family: 'Hind', sans-serif;
-  --bodyFont: font-family: 'Montserrat', sans-serif;
+  --headingFont: 'Hind', sans-serif;
+  --bodyFont: 'Montserrat', sans-serif;
   /* --font-size: ; */
 }
 
@@ -22,4 +22,25 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+/* main web page styling */
+body{
+  /* layout testing */
+  /* background-color: lightblue; */
+  border: 5px solid green;
+
+  /* clear browser inserted margins  */
+  margin: 0;
+  padding: 0;
+
+  /* general font  */
+  font-family: var(--bodyFont);
+}
+
+section{
+  /* layout testing */
+  /* background-color: chartreuse; */
+  border: 3px dashed deeppink;
+
 }
