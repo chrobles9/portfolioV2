@@ -1,46 +1,84 @@
 /* Variables for portfolio's fonts and color themes */
 
-:root{
+:root {
   /* Colors */
-  --mainBackground: #1D1E26;
-  --secondaryBackground: #5E35F2;
-  --accentOne:#8C5CF2;
-  --accentTwo:#E4CEF2;
-  --accentThree: #F20587;
+  --mainBackground: #1d1e26;
+  --secondaryBackground: #5e35f2;
+  --accentOne: #8c5cf2;
+  --accentTwo: #86ff9a;
+  --accentThree: #f20587;
   --white: rgb(240, 240, 240);
-  --black: rgb(14, 14, 14); 
+  --black: rgb(14, 14, 14);
 
   /* Fonts */
-  --headingFont: 'Hind', sans-serif;
-  --bodyFont: 'Montserrat', sans-serif;
-  /* --font-size: ; */
+  --titleFont: "Hind", sans-serif;
+  --bodyFont: "Montserrat", sans-serif;
+  --font-size: 1.2rem;
 }
 
 /* Universal box sizing with inheritance */
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 /* main web page styling */
-body{
+body {
   /* layout testing */
   /* background-color: lightblue; */
-  border: 5px solid green;
+  /* border: 5px solid green; */
 
   /* clear browser inserted margins  */
   margin: 0;
   padding: 0;
-
   /* general font  */
+  font-size: var(--font-size);
   font-family: var(--bodyFont);
+  color: var(--white);
+  /* general background color  */
+  background-color: var(--mainBackground);
+
 }
 
-section{
+/* clear default margin on text elements */
+h1, h2, h3, p{
+  margin: 0;
+}
+
+/* General links */
+a{
+  color: var(--accentOne);
+}
+a:hover {
+  color: var(--accentThree);
+}
+
+/* intro styles */
+.aboutMe{
   /* layout testing */
   /* background-color: chartreuse; */
-  border: 3px dashed deeppink;
+  /* border: 3px dashed deeppink; */
 
+  padding-bottom: 12rem;
 }
+
+.aboutMe p{
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 86%;
+}
+.aboutMe h2{
+  font-size: 3rem;
+}
+
+.name{
+  font-size: 4rem;
+  font-family: var(--titleFont);
+  color: var(--accentTwo);
+  display: block;
+}
+
