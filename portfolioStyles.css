@@ -79,6 +79,7 @@ a:hover {
   font-size: 4rem;
   font-family: var(--titleFont);
   color: var(--accentTwo);
+  /* Set name on indiviual line */
   display: block;
 }
 
