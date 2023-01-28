@@ -51,13 +51,14 @@ h1, h2, h3, p{
 
 /* General links */
 a{
-  color: var(--accentOne);
+  color: #c5006c;
 }
 a:hover {
   color: var(--accentThree);
+  text-decoration: none;
 }
 
-/* intro styles */
+/******* Intro Styles *******/
 .aboutMe{
   /* layout testing */
   /* background-color: chartreuse; */
@@ -83,3 +84,14 @@ a:hover {
   display: block;
 }
 
+/******* Contact Me Styles *******/
+.contact{
+  background-color: var(--secondaryBackground);
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.contact p:last-child{
+  margin-top: 3rem;
+}
