@@ -101,7 +101,7 @@ a:hover {
 /******* Navigation Styles *******/
 nav {
   /* border for layout purposes */
-  border: solid 2px red;
+  /* border: solid 2px red; */
 
   font-family: var(--bodyFont);
   font-size: 80%;
@@ -121,15 +121,23 @@ nav ul {
   padding: 0;
 }
 
-nav ul:first-child {
+nav ul li:first-child {
+  /* extend 100% of available space  */
   flex-basis: 100%;
-}
-
-nav ul li {
+  text-align: center;
 }
 
 nav a {
+  /* Border for layout testing */
+  /* border: 1px solid white; */
+
   text-decoration: none;
+  color: var(--white);
+  /* display: block; */
+}
+
+nav a:hover {
+  color: var(--accentThree);
 }
 
 nav h1 a {
