@@ -101,7 +101,7 @@ a:hover {
 /******* Navigation Styles *******/
 nav {
   /* border for layout purposes */
-  /* border: solid 2px red; */
+  border: solid 2px red;
 
   font-family: var(--bodyFont);
   font-size: 80%;
@@ -137,9 +137,8 @@ nav a {
 }
 
 nav a:hover,
-nav [class*='fa-']:hover {
+nav [class*="fa-"]:hover {
   color: var(--accentThree);
-
 }
 
 nav h1 a {
@@ -147,19 +146,18 @@ nav h1 a {
   font-size: 2rem;
 }
 
-
 /******* Navigation Icon Styles *******/
-nav [class*='fa-'] {
+nav [class*="fa-"] {
   font-size: 175%;
   color: var(--accentOne);
 }
-nav h1 [class*='fa-'] {
+nav h1 [class*="fa-"] {
   font-size: 100%;
 }
 
 /* Call to action added to navigation for resume */
 /******* Navigation Resume Button  *******/
-.button{
+.button {
   background-color: var(--accentThree);
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -168,4 +166,18 @@ nav h1 [class*='fa-'] {
 .button:hover {
   color: var(--white);
   background-color: var(--accentOne);
+}
+
+/* Styles for larger viewports */
+@media (min-width: 800px){
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+/* Aligns h1 with the rest of navigation links  */
+  nav ul li:first-child{
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
