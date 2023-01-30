@@ -41,16 +41,18 @@ body {
   color: var(--white);
   /* general background color  */
   background-color: var(--mainBackground);
-
 }
 
 /* clear default margin on text elements */
-h1, h2, h3, p{
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
 /* General links */
-a{
+a {
   color: #c5006c;
 }
 a:hover {
@@ -59,7 +61,7 @@ a:hover {
 }
 
 /******* Intro Styles *******/
-.aboutMe{
+.aboutMe {
   /* layout testing */
   /* background-color: chartreuse; */
   /* border: 3px dashed deeppink; */
@@ -67,16 +69,16 @@ a:hover {
   padding-bottom: 12rem;
 }
 
-.aboutMe p{
+.aboutMe p {
   font-size: 1rem;
   line-height: 1.5;
   width: 86%;
 }
-.aboutMe h2{
+.aboutMe h2 {
   font-size: 3rem;
 }
 
-.name{
+.name {
   font-size: 4rem;
   font-family: var(--titleFont);
   color: var(--accentTwo);
@@ -85,48 +87,52 @@ a:hover {
 }
 
 /******* Contact Me Styles *******/
-.contact{
+.contact {
   background-color: var(--secondaryBackground);
   text-align: center;
   margin: 0 auto;
   padding: 3rem 0;
 }
 
-.contact p:last-child{
+.contact p:last-child {
   margin-top: 3rem;
 }
 
 /******* Navigation Styles *******/
-nav{
+nav {
   /* border for layout purposes */
   border: solid 2px red;
-  
+
   font-family: var(--bodyFont);
   font-size: 80%;
   padding: 1rem;
 }
 
-nav ul{
+/* Nav Flex Container */
+nav ul {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul:first-child{
+nav ul:first-child {
   flex-basis: 100%;
 }
 
-
-nav ul li{
-  list-style-type: none;
+nav ul li {
 }
 
-nav a{
+nav a {
   text-decoration: none;
 }
 
-nav h1 a{
+nav h1 a {
   font-family: var(--titleFont);
   font-size: 2rem;
 }
-
