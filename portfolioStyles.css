@@ -7,6 +7,8 @@
   --accentOne: #8c5cf2;
   --accentTwo: #86ff9a;
   --accentThree: #f20587;
+  /* visual divider */
+  --gradient: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(207,141,48,1) 100%);
   --white: rgb(240, 240, 240);
   --black: rgb(14, 14, 14);
 
@@ -108,7 +110,7 @@ a:hover {
 /******* Navigation Styles *******/
 nav {
   /* border for layout purposes */
-  border: solid 2px red;
+  /* border: solid 2px red; */
 
   font-family: var(--bodyFont);
   font-size: 80%;
@@ -178,7 +180,7 @@ nav h1 [class*="fa-"] {
 /******** Footer Styles  *******/
 footer {
   /* layout testing */
-  border: 1px white solid;
+  /* border: 1px white solid; */
 
   text-align: center;
   margin: 4rem auto 2rem;
@@ -205,7 +207,14 @@ footer a {
   font-size: 0.75rem;
 }
 
-/* Styles for larger viewports */
+/******* Visual Divider Styles *******/
+.divider{
+  height: 2px;
+  background: rgb(253,29,29);
+  background: var(--gradient);
+}
+
+/******* Styles for larger viewports *******/
 @media (min-width: 800px) {
   nav {
     max-width: 1200px;
