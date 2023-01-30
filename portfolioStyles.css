@@ -95,3 +95,33 @@ a:hover {
 .contact p:last-child{
   margin-top: 3rem;
 }
+
+/******* Navigation Styles *******/
+nav{
+  /* text-align: center; */
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav ul:first-child{
+  flex-basis: 100%;
+}
+
+
+nav ul li{
+  list-style-type: none;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+nav h1 a{
+  font-family: var(--titleFont);
+  font-size: 2rem;
+}
+
