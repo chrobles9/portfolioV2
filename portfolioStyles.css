@@ -136,11 +136,23 @@ nav a {
   /* display: block; */
 }
 
-nav a:hover {
+nav a:hover,
+nav [class*='fa-']:hover {
   color: var(--accentThree);
+
 }
 
 nav h1 a {
   font-family: var(--titleFont);
   font-size: 2rem;
+}
+
+
+/******* Navigation Icon Styles *******/
+nav [class*='fa-'] {
+  font-size: 175%;
+  color: var(--accentOne);
+}
+nav h1 [class*='fa-'] {
+  font-size: 100%;
 }
