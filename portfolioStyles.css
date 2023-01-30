@@ -181,3 +181,12 @@ nav h1 [class*="fa-"] {
     margin-right: auto;
   }
 }
+
+/******** Footer Styles  *******/
+footer{
+  /* layout testing */
+border: 1px white solid;
+
+
+
+}
