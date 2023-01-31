@@ -6,7 +6,6 @@
   --accentOne: #8c5cf2;
   --accentTwo: #86ff9a;
   --accentThree: #f20587;
-  
   /* visual divider */
   --gradient: linear-gradient(
     90deg,
@@ -15,7 +14,6 @@
   );
   --white: rgb(240, 240, 240);
   --black: rgb(14, 14, 14);
-
   /* Fonts */
   --titleFont: "Hind", sans-serif;
   --bodyFont: "Montserrat", sans-serif;
@@ -26,7 +24,6 @@
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
@@ -45,7 +42,6 @@ body {
   /* general background color  */
   background-color: var(--mainBackground);
 }
-
 /* clear default margin on text elements */
 h1,
 h2,
@@ -53,12 +49,10 @@ h3,
 p {
   margin: 0;
 }
-
 /* General links */
 a {
   color: #c5006c;
 }
-
 a:hover {
   color: var(--accentThree);
   text-decoration: none;
@@ -71,17 +65,14 @@ a:hover {
   margin: 0 auto;
   height: 100vh;
 }
-
 .aboutMe p {
   font-size: 1rem;
   line-height: 2;
   margin: 1rem auto;
 }
-
 .aboutMe h2 {
   font-size: 3rem;
 }
-
 .name {
   font-size: 4rem;
   font-family: var(--titleFont);
@@ -91,7 +82,6 @@ a:hover {
   line-height: 1;
   margin: 0.5rem 0;
 }
-
 .intro {
   font-weight: bolder;
   line-height: 1;
@@ -105,59 +95,46 @@ a:hover {
   width: 100%;
   padding: 10rem 2rem;
 }
-
 .contact a {
   color: var(--white);
   text-decoration: none;
 }
-
 .contact p:last-child {
   margin-top: 3rem;
 }
 
 /******* Navigation Styles *******/
 nav {
-  /* border for layout purposes */
-  /* border: solid 2px red; */
   width: 100%;
   font-family: var(--bodyFont);
   font-size: 80%;
   padding: 1rem;
 }
-
 /* Nav Flex Container */
 nav ul {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   margin: 0;
   padding: 0;
 }
-
 nav ul li:first-child {
   /* extend 100% of available space  */
   flex-basis: 100%;
   text-align: center;
 }
-
 nav a {
-  /* Border for layout testing */
-  /* border: 1px solid white; */
-
   text-decoration: none;
   color: var(--white);
-  /* display: block; */
+  display: block;
 }
-
 nav a:hover,
 nav [class*="fa-"]:hover {
   color: var(--accentThree);
 }
-
 nav h1 a {
   font-family: var(--titleFont);
   font-size: 2rem;
@@ -168,7 +145,6 @@ nav [class*="fa-"] {
   font-size: 175%;
   color: var(--accentOne);
 }
-
 nav h1 [class*="fa-"] {
   font-size: 100%;
 }
@@ -180,7 +156,6 @@ nav h1 [class*="fa-"] {
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
-
 .button:hover {
   color: var(--white);
   background-color: var(--accentOne);
@@ -188,30 +163,23 @@ nav h1 [class*="fa-"] {
 
 /******** Footer Styles  *******/
 footer {
-  /* layout testing */
-  /* border: 1px white solid; */
-
   text-align: center;
   margin: 4rem auto 2rem;
   padding: 4rem 0 0 0;
 }
-
 footer ul {
   display: flex;
   justify-content: center;
   gap: 3rem;
   flex-flow: row wrap;
-
   margin: 1rem 0;
   padding: 0;
   font-size: 2.5rem;
   list-style-type: none;
 }
-
 footer a {
   color: var(--accentOne);
 }
-
 .copyright {
   font-size: 0.75rem;
 }
@@ -226,34 +194,21 @@ footer a {
 
 /******* Styles for Projects section *******/
 .projects {
-  /* border: 1px solid white; */
-  /* margin: 1rem auto; */
-  /* padding: 2rem 1rem; */
   background-color: var(--accentOne);
-
   padding: 4rem 2rem 10rem;
 }
-
 .projects h2 {
   font-size: 2.5rem;
   margin-bottom: calc(2.5rem * 1.5);
 }
-
 .projects h3 {
   font-family: var(--titleFont);
-  /* font-size: 2rem; */
   color: var(--accentTwo);
-  /* text-align: left; */
 }
-
 .projects h4 {
   margin: 1rem 0 0 0;
   font-size: 1rem;
-  /* font-weight: bolder; */
-  /* text-align: left; */
-  /* padding-top: 1rem; */
 }
-
 .projects p {
   font-size: 1rem;
   background-color: var(--mainBackground);
@@ -263,20 +218,15 @@ footer a {
   width: 90%;
   margin: 1rem auto;
 }
-
 .projects ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-
 .projectItem {
-  /* border: 1px solid red; */
   width: 100%;
   margin: 0 auto;
-  /* text-align: center; */
 }
-
 .projects img {
   margin: 2rem auto 4rem auto;
   width: 90%;
