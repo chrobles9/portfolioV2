@@ -21,6 +21,10 @@
 /* Universal box sizing with inheritance */
 html {
   box-sizing: border-box;
+
+
+  /* Overflow element fix */
+  width: 100%;
 }
 *,
 *:before,
@@ -213,6 +217,86 @@ footer a {
   background: rgb(253,29,29);
   background: var(--gradient);
 }
+
+
+
+
+
+
+/******* Styles for Project section *******/
+.projects {
+border: 1px solid white;
+  /* margin: 0 auto; */
+  background-color: var(--accentOne);
+
+
+}
+
+.projects h2{
+  font-size: 3rem;
+  padding: 2rem 1rem;
+}
+
+.projects h3 {
+  font-family: var(--titleFont);
+  font-size: 2rem;
+  color: var(--accentTwo);
+  text-align: left;
+}
+
+.projects h4 {
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.projects p {
+  font-size: 1rem;
+  background-color: var(--mainBackground);
+  border-radius: 25px;
+  padding: 1rem 1rem;
+  width: 95%;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+
+
+.projects ul li {
+  list-style-type: none;
+}
+
+
+.projectItem {
+  /* border: 1px solid red; */
+  width: 95%;
+  margin: 2rem 0;
+  text-align: center;
+
+}
+
+.projects img {
+  width: 95%;
+  border-radius: 25px;
+  padding: 1rem;
+  border-left: 1px solid var(--accentTwo);
+  border-bottom: 1px solid var(--accentTwo);
+}
+
+/* Styles for list of techologies project is built with */
+.techList {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem auto;
+  
+}
+
+
+
+
+
 
 /******* Styles for larger viewports *******/
 @media (min-width: 800px) {
