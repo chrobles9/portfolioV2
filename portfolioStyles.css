@@ -1,5 +1,4 @@
 /* Variables for portfolio's fonts and color themes */
-
 :root {
   /* Colors */
   --mainBackground: #1d1e26;
@@ -7,8 +6,13 @@
   --accentOne: #8c5cf2;
   --accentTwo: #86ff9a;
   --accentThree: #f20587;
+  
   /* visual divider */
-  --gradient: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(207,141,48,1) 100%);
+  --gradient: linear-gradient(
+    90deg,
+    rgba(253, 29, 29, 1) 0%,
+    rgba(207, 141, 48, 1) 100%
+  );
   --white: rgb(240, 240, 240);
   --black: rgb(14, 14, 14);
 
@@ -21,11 +25,8 @@
 /* Universal box sizing with inheritance */
 html {
   box-sizing: border-box;
-
-
-  /* Overflow element fix */
-  width: 100%;
 }
+
 *,
 *:before,
 *:after {
@@ -34,10 +35,6 @@ html {
 
 /* main web page styling */
 body {
-  /* layout testing */
-  /* background-color: lightblue; */
-  /* border: 5px solid green; */
-
   /* clear browser inserted margins  */
   margin: 0;
   padding: 0;
@@ -61,6 +58,7 @@ p {
 a {
   color: #c5006c;
 }
+
 a:hover {
   color: var(--accentThree);
   text-decoration: none;
@@ -68,21 +66,18 @@ a:hover {
 
 /******* Intro Styles *******/
 .aboutMe {
-  /* layout testing */
-  /* background-color: chartreuse; */
-  /* border: 2px dashed deeppink; */
-
-  padding: 4rem 1rem 10rem;
+  padding: 2rem 2rem 10rem;
   max-width: 1200px;
   margin: 0 auto;
-  line-height: 1.5;
+  height: 100vh;
 }
 
 .aboutMe p {
   font-size: 1rem;
-  width: 86%;
   line-height: 2;
+  margin: 1rem auto;
 }
+
 .aboutMe h2 {
   font-size: 3rem;
 }
@@ -93,6 +88,13 @@ a:hover {
   color: var(--accentTwo);
   /* Set name on indiviual line */
   display: block;
+  line-height: 1;
+  margin: 0.5rem 0;
+}
+
+.intro {
+  font-weight: bolder;
+  line-height: 1;
 }
 
 /******* Contact Me Styles *******/
@@ -100,8 +102,10 @@ a:hover {
   background-color: var(--secondaryBackground);
   text-align: center;
   margin: 0 auto;
-  padding: 3rem 0;
+  width: 100%;
+  padding: 10rem 2rem;
 }
+
 .contact a {
   color: var(--white);
   text-decoration: none;
@@ -115,7 +119,7 @@ a:hover {
 nav {
   /* border for layout purposes */
   /* border: solid 2px red; */
-
+  width: 100%;
   font-family: var(--bodyFont);
   font-size: 80%;
   padding: 1rem;
@@ -164,6 +168,7 @@ nav [class*="fa-"] {
   font-size: 175%;
   color: var(--accentOne);
 }
+
 nav h1 [class*="fa-"] {
   font-size: 100%;
 }
@@ -188,16 +193,16 @@ footer {
 
   text-align: center;
   margin: 4rem auto 2rem;
-  /* padding: 4rem 0; */
+  padding: 4rem 0 0 0;
 }
 
 footer ul {
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 3rem;
   flex-flow: row wrap;
 
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 0;
   font-size: 2.5rem;
   list-style-type: none;
@@ -212,74 +217,70 @@ footer a {
 }
 
 /******* Visual Divider Styles *******/
-.divider{
+.divider {
   height: 2px;
-  background: rgb(253,29,29);
+  width: 100%;
+  background: rgb(253, 29, 29);
   background: var(--gradient);
 }
 
-
-
-
-
-
-/******* Styles for Project section *******/
+/******* Styles for Projects section *******/
 .projects {
-/* border: 1px solid white; */
+  /* border: 1px solid white; */
   /* margin: 1rem auto; */
-  padding: 2rem 0;
+  /* padding: 2rem 1rem; */
   background-color: var(--accentOne);
 
-
+  padding: 4rem 2rem 10rem;
 }
 
-.projects h2{
-  font-size: 3rem;
-  padding: 2rem 1rem;
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
 }
 
 .projects h3 {
   font-family: var(--titleFont);
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: var(--accentTwo);
-  text-align: left;
+  /* text-align: left; */
 }
 
 .projects h4 {
-  margin: 0;
-  padding-top: 1rem;
+  margin: 1rem 0 0 0;
   font-size: 1rem;
-  font-weight: bolder;
-  text-align: left;
+  /* font-weight: bolder; */
+  /* text-align: left; */
+  /* padding-top: 1rem; */
 }
 
 .projects p {
   font-size: 1rem;
   background-color: var(--mainBackground);
   border-radius: 25px;
-  padding: 1rem 1rem;
-  width: 95%;
+  padding: 1rem;
+  line-height: 1.5;
+  width: 90%;
   margin: 1rem auto;
-  text-align: left;
 }
 
-
-
-.projects ul li {
+.projects ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-
 
 .projectItem {
   /* border: 1px solid red; */
-  width: 95%;
-  margin: 2rem 0;
-  text-align: center;
-
+  width: 100%;
+  margin: 0 auto;
+  /* text-align: center; */
 }
 
 .projects img {
-  width: 95%;
+  margin: 2rem auto 4rem auto;
+  width: 90%;
+  display: block;
   max-width: 700px;
   border-radius: 25px;
   padding: 1rem;
@@ -290,13 +291,11 @@ footer a {
 /* Styles for list of techologies project is built with */
 .techList {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   gap: 1rem;
-  margin: 1rem auto;
-  
+  font-size: 1rem;
 }
-
-
-
 
 
 
