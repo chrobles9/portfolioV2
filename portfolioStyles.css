@@ -1,5 +1,8 @@
 /* Variables for portfolio's fonts and color themes */
 :root {
+
+    /* TODO: Finalize color theme choices  */
+
   /* Colors */
   --mainBackground: #1d1e26;
   --secondaryBackground: #5e35f2;
@@ -14,13 +17,16 @@
   );
   --white: rgb(240, 240, 240);
   --black: rgb(14, 14, 14);
+
+  /* TODO: Finalize Font Style Choices  */
+
   /* Fonts */
   --titleFont: "Hind", sans-serif;
   --bodyFont: "Montserrat", sans-serif;
   --font-size: 1.2rem;
 }
 
-/* Universal box sizing with inheritance */
+/*********** Universal box sizing with inheritance ***********/
 html {
   box-sizing: border-box;
 }
@@ -30,7 +36,7 @@ html {
   box-sizing: inherit;
 }
 
-/* main web page styling */
+/*********** main web page styling ***********/
 body {
   /* clear browser inserted margins  */
   margin: 0;
@@ -49,7 +55,7 @@ h3,
 p {
   margin: 0;
 }
-/* General links */
+/*********** General links ***********/
 a {
   color: #c5006c;
 }
@@ -58,7 +64,7 @@ a:hover {
   text-decoration: none;
 }
 
-/******* Intro Styles *******/
+/***************** Intro Styles *****************/
 .aboutMe {
   padding: 2rem 2rem 10rem;
   max-width: 1200px;
@@ -87,7 +93,7 @@ a:hover {
   line-height: 1;
 }
 
-/******* Contact Me Styles *******/
+/***************** Contact Me Styles *****************/
 .contact {
   background-color: var(--secondaryBackground);
   text-align: center;
@@ -103,7 +109,12 @@ a:hover {
   margin-top: 3rem;
 }
 
-/******* Navigation Styles *******/
+/***************** Navigation Styles *****************/
+
+/* TODO: Add css pattern background  ***********/
+/* TODO: create a fixed menu when scrolling  ***********/
+
+
 nav {
   width: 100%;
   font-family: var(--bodyFont);
@@ -140,7 +151,7 @@ nav h1 a {
   font-size: 2rem;
 }
 
-/******* Navigation Icon Styles *******/
+/***************** Navigation Icon Styles *****************/
 nav [class*="fa-"] {
   font-size: 175%;
   color: var(--accentOne);
@@ -150,7 +161,7 @@ nav h1 [class*="fa-"] {
 }
 
 /* Call to action added to navigation for resume */
-/******* Navigation Resume Button  *******/
+/***************** Navigation Resume Button  *****************/
 .button {
   background-color: var(--accentThree);
   padding: 0.5rem 1rem;
@@ -161,7 +172,7 @@ nav h1 [class*="fa-"] {
   background-color: var(--accentOne);
 }
 
-/******** Footer Styles  *******/
+/****************** Footer Styles  *****************/
 footer {
   text-align: center;
   margin: 4rem auto 2rem;
@@ -184,7 +195,7 @@ footer a {
   font-size: 0.75rem;
 }
 
-/******* Visual Divider Styles *******/
+/***************** Visual Divider Styles *****************/
 .divider {
   height: 2px;
   width: 100%;
@@ -192,7 +203,7 @@ footer a {
   background: var(--gradient);
 }
 
-/******* Styles for Projects section *******/
+/***************** Styles for Projects section *****************/
 .projects {
   background-color: var(--accentOne);
   padding: 4rem 2rem 10rem;
@@ -218,7 +229,7 @@ footer a {
   width: 100%;
   margin: 1rem auto;
 }
-.projects ul {
+.projectList {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -231,11 +242,11 @@ footer a {
   margin: 2rem auto 4rem auto;
   width: 90%;
   display: block;
-  max-width: 500px;
+  /* max-width: 500px; */
   border-radius: 25px;
   padding: 1rem;
-  border-left: 1px solid var(--accentTwo);
-  border-bottom: 1px solid var(--accentTwo);
+  border-right: 1px solid var(--accentTwo);
+  border-top: 1px solid var(--accentTwo);
 }
 
 /* Styles for list of techologies project is built with */
@@ -245,11 +256,24 @@ footer a {
   justify-content: flex-start;
   gap: 1rem;
   font-size: 1rem;
+  list-style-type: none;
+
+}
+/***************** 
+            Styles for collapsing menu on smaller viewport
+*****************/
+
+/* TODO: Add styles for collapsing menu   ***********/
+
+.contentWidth {
+  margin: 0 auto;
+  width: 80%;
 }
 
 
 
-/******* Styles for larger viewports *******/
+
+/***************** Styles for larger viewports *****************/
 @media (min-width: 800px) {
   nav {
     max-width: 1200px;
@@ -262,44 +286,81 @@ footer a {
     margin-right: auto;
   }
 
-
-
-/* 
-  .projects {
-
-    
-  } */
-
-
-
-    /* Grid container  */
+  
+  
+  /* Grid container  */
   .projectItem {
     /* layout testing border  */
-    border: solid 1px red;
-
-    margin: 2rem auto;
-
-    /* Project Item Grid */
+    /* border: solid 1px red; */
+    margin: 4rem auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-
+    
+    
+    /* project overlap styles  */
     align-items: center;
-
-
-
+    
+    grid-template-columns: repeat(5, 1fr);
+    
   }
   .text {
-    text-align: left;
+    order: 2;
+    /* project overlap styles  */
+    grid-column: 1/4;
+    grid-row: 1/2;
+    
   }
-
+  .text p {
+    text-indent: 2rem;
+  }
   .projectItem img {
     margin: 1rem auto;
     width: 100%;
+    
+    /* project overlap styles  */
+    grid-column: 3/6;
+    grid-row: 1/2;
   }
-
-  .techList {
-    justify-content: center;
+  
+  
+  .contentWidth {
+    margin: 0 auto;
+    width: 70%;
   }
+  
+  /*   TODO: Reverse styles for Project 2 for asthetics  ********** */
+  
 
+.middleContain {
+  
+}
+
+.middleText {
+  grid-column: 3/6;
+  text-align: right;
+}
+
+.middleText p {
+  text-align: left;
+}
+
+.middleText > .techList {
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+#middleImage {
+  grid-column: 1/4;
+
+  
+}
+
+  
+  
+  
 }
