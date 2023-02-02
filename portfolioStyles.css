@@ -158,6 +158,17 @@ nav h1 [class*="fa-"] {
   font-size: 100%;
 }
 
+
+
+.hamburger, .close {
+  font-size: 2rem;
+  color: var(--accentTwo);
+  padding: 1rem;
+}
+
+
+
+
 /* Call to action added to navigation for resume */
 /***************** Navigation Resume Button  *****************/
 .button {
