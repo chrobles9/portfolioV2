@@ -20,8 +20,15 @@
   </head>
   <body>
     <!-- TODO: Add responsive navigation  -->
+
     <!-- Header with navigation -->
     <header>
+      <!-- Hamburger icon for responsive navigation  -->
+      <a class="hamburger" href="#navbar" aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fas fa-bars" aria-hidden="true"></span>
+      </a>
+      <!-- Main Navigation  -->
       <nav>
         <ul>
           <li>
@@ -29,7 +36,10 @@
               <a href="index.html">
                 <!-- TODO: Select final logo next to H1 name -->
                 <!-- <span class="fa-solid fa-laptop-code" aria-hidden="true"></span> -->
-                <span class="fa-brands fa-connectdevelop" aria-hidden="true"></span>
+                <span
+                  class="fa-brands fa-connectdevelop"
+                  aria-hidden="true"
+                ></span>
                 <!-- <span class="fa-solid fa-jedi" aria-hidden="true"></span> -->
                 <!-- <span class="fa-brands fa-jedi-order" aria-hidden="true"></span> -->
                 <!-- <span class="fa-brands fa-empire" aria-hidden="true"></span> -->
@@ -73,10 +83,14 @@
           <!-- TODO: Add resume -->
           <li><a href="#Resume" class="button">Resume</a></li>
         </ul>
+
+        <!-- Close icon. Hidden with menu when menu is closed  -->
+        <a class="close" href="#" aria-label="Close main menu">
+          <span class="sr-only">Close main menu</span>
+          <span class="fas fa-times" aria-hidden="true"></span>
+        </a>
       </nav>
     </header>
-
-
 
     <!-- Intro with details about me -->
     <section class="aboutMe contentWidth" id="about">
@@ -106,102 +120,101 @@
 
     <!-------- Projects Section -------->
 
-
     <section id="projects" class="projects">
       <div class="projectsContain contentWidth">
+        <h2>Projects</h2>
 
-      <h2>Projects</h2>
+        <ul class="projectList">
+          <!-------- Project #1 -------->
+          <!-- Grind Container  -->
+          <li class="projectItem">
+            <!-- Text Container  -->
+            <div class="text">
+              <h4>Latest Project</h4>
+              <h3>Project Title #1</h3>
+              <p>
+                Description of the project. This should be fairly concise while
+                also describing the key components that you developed or worked
+                on. It can be as long as you need it to be but should at least
+                be a few sentences long. Be sure to include specific links
+                anywhere in the description. A link looks like
+                <a href="#">this</a>.
+              </p>
+              <h4>Built with:</h4>
+              <ul class="techList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Technology #3</li>
+              </ul>
+            </div>
 
-      <ul class="projectList">
-        <!-------- Project #1 -------->
-        <!-- Grind Container  -->
-        <li class="projectItem">
-          <!-- Text Container  -->
-          <div class="text">
-            <h4>Latest Project</h4>
-            <h3>Project Title #1</h3>
-            <p>
-              Description of the project. This should be fairly concise while
-              also describing the key components that you developed or worked
-              on. It can be as long as you need it to be but should at least be
-              a few sentences long. Be sure to include specific links anywhere
-              in the description. A link looks like <a href="#">this</a>.
-            </p>
-            <h4>Built with:</h4>
-            <ul class="techList">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Technology #3</li>
-            </ul>
-          </div>
+            <!-- Project Image  -->
+            <img
+              src="./media/images/projectPlaceholder.jpg"
+              alt="Screenshot of Project Title #1"
+            />
+          </li>
 
-          <!-- Project Image  -->
-          <img
-            src="./media/images/projectPlaceholder.jpg"
-            alt="Screenshot of Project Title #1"
-          />
-        </li>
+          <!-------- Project #2 -------->
+          <li class="projectItem middleContain">
+            <div class="text middleText">
+              <h4>E-Commerce Project</h4>
+              <h3>PopLocker</h3>
+              <p>
+                Description of the project. This should be fairly concise while
+                also describing the key components that you developed or worked
+                on. It can be as long as you need it to be but should at least
+                be a few sentences long. Be sure to include specific links
+                anywhere in the description. A link looks like
+                <a href="#">this</a>.
+              </p>
+              <h4>Built with:</h4>
+              <ul class="techList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>Technology #3</li>
+              </ul>
+            </div>
 
-        <!-------- Project #2 -------->
-        <li class="projectItem middleContain">
-          <div class="text middleText">
-            <h4>E-Commerce Project</h4>
-            <h3>PopLocker</h3>
-            <p>
-              Description of the project. This should be fairly concise while
-              also describing the key components that you developed or worked
-              on. It can be as long as you need it to be but should at least be
-              a few sentences long. Be sure to include specific links anywhere
-              in the description. A link looks like <a href="#">this</a>.
-            </p>
-            <h4>Built with:</h4>
-            <ul class="techList">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>PHP</li>
-              <li>Technology #3</li>
-            </ul>
-          </div>
+            <img
+              src="./media/images/projectPlaceholder.jpg"
+              alt="Screenshot of Project Title #2"
+              id="middleImage"
+            />
+          </li>
 
-          <img
-            src="./media/images/projectPlaceholder.jpg"
-            alt="Screenshot of Project Title #2" id="middleImage"
-          />
-        </li>
+          <!-------- Project #3 -------->
 
-        <!-------- Project #3 -------->
+          <li class="projectItem">
+            <!-- textbox container  -->
+            <div class="text">
+              <h4>Project Description #3</h4>
+              <h3>Project Title #3</h3>
+              <p>
+                Description of the project. This should be fairly concise while
+                also describing the key components that you developed or worked
+                on. It can be as long as you need it to be but should at least
+                be a few sentences long. Be sure to include specific links
+                anywhere in the description. A link looks like
+                <a href="#">this</a>.
+              </p>
+              <h4>Built with:</h4>
+              <!-- Container for flex -->
+              <ul class="techList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Technology #3</li>
+              </ul>
+            </div>
 
-        <li class="projectItem">
-          <!-- textbox container  -->
-          <div class="text">
-            <h4>Project Description #3</h4>
-            <h3>Project Title #3</h3>
-            <p>
-              Description of the project. This should be fairly concise while
-              also describing the key components that you developed or worked
-              on. It can be as long as you need it to be but should at least be
-              a few sentences long. Be sure to include specific links anywhere
-              in the description. A link looks like <a href="#">this</a>.
-            </p>
-            <h4>Built with:</h4>
-            <!-- Container for flex -->
-            <ul class="techList">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Technology #3</li>
-            </ul>
-          </div>
-
-          <img
-            src="./media/images/projectPlaceholder.jpg"
-            alt="Screenshot of Project Title #3"
-          />
-        </li>
-      </ul>
-
-              
-    </div>
-
+            <img
+              src="./media/images/projectPlaceholder.jpg"
+              alt="Screenshot of Project Title #3"
+            />
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- div for visual divider between content sections -->
