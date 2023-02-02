@@ -1,7 +1,6 @@
 /* Variables for portfolio's fonts and color themes */
 :root {
-
-    /* TODO: Finalize color theme choices  */
+  /* TODO: Finalize color theme choices  */
 
   /* Colors */
   --mainBackground: #1d1e26;
@@ -80,7 +79,7 @@ a:hover {
   font-size: 3rem;
 }
 .name {
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: var(--titleFont);
   color: var(--accentTwo);
   /* Set name on indiviual line */
@@ -113,7 +112,6 @@ a:hover {
 
 /* TODO: Add css pattern background  ***********/
 /* TODO: create a fixed menu when scrolling  ***********/
-
 
 nav {
   width: 100%;
@@ -257,7 +255,6 @@ footer a {
   gap: 1rem;
   font-size: 1rem;
   list-style-type: none;
-
 }
 /***************** 
             Styles for collapsing menu on smaller viewport
@@ -269,9 +266,6 @@ footer a {
   margin: 0 auto;
   width: 80%;
 }
-
-
-
 
 /***************** Styles for larger viewports *****************/
 @media (min-width: 800px) {
@@ -286,8 +280,6 @@ footer a {
     margin-right: auto;
   }
 
-  
-  
   /* Grid container  */
   .projectItem {
     /* layout testing border  */
@@ -295,20 +287,17 @@ footer a {
     margin: 4rem auto;
     display: grid;
     gap: 2rem;
-    
-    
+
     /* project overlap styles  */
     align-items: center;
-    
+
     grid-template-columns: repeat(5, 1fr);
-    
   }
   .text {
     order: 2;
     /* project overlap styles  */
     grid-column: 1/4;
     grid-row: 1/2;
-    
   }
   .text p {
     text-indent: 2rem;
@@ -316,51 +305,31 @@ footer a {
   .projectItem img {
     margin: 1rem auto;
     width: 100%;
-    
+
     /* project overlap styles  */
     grid-column: 3/6;
     grid-row: 1/2;
   }
-  
-  
+
   .contentWidth {
     margin: 0 auto;
     width: 70%;
   }
-  
-  /*   TODO: Reverse styles for Project 2 for asthetics  ********** */
-  
-/* 
-.middleContain {
-  
-} */
 
-.middleText {
-  grid-column: 3/6;
-  text-align: right;
-}
+  .middleText {
+    grid-column: 3/6;
+    text-align: right;
+  }
 
-.middleText p {
-  text-align: left;
-}
+  .middleText p {
+    text-align: left;
+  }
 
-.middleText > .techList {
-  justify-content: flex-end;
-}
+  .middleText > .techList {
+    justify-content: flex-end;
+  }
 
-
-
-
-
-
-
-#middleImage {
-  grid-column: 1/4;
-
-  
-}
-
-  
-  
-  
+  #middleImage {
+    grid-column: 1/4;
+  }
 }
