@@ -160,10 +160,11 @@ a:hover {
 nav {
   
   /* width: 100%; */
-
+/* display: block; */
   font-family: var(--bodyFont);
   font-size: 80%;
   padding: 1rem;
+  position: static;
 }
 /* Nav Flex Container */
 nav ul {
@@ -173,7 +174,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 nav ul li:first-child {
@@ -210,8 +211,13 @@ nav h1 [class*="fa-"] {
   font-size: 2rem;
   color: var(--accentTwo);
   padding: 1rem;
+  /* visibility: hidden; */
+  display: none;
 }
 
+.close {
+  text-align: right;
+}
 
 
 
@@ -329,12 +335,21 @@ footer a {
 /* TODO: Add more spacing around hamburger icon  */
 /* TODO: adjust style rules for small, medium and large viewports  */
 /* Styles for smaller viewports  */
-/* @media (max-width: 500px) { */
+@media (max-width: 450px) {
+
+  .hamburger, .close {
+
+    /* visibility: visible; */
+    display: inline-block;
+  }
+
   nav {
     padding: 0;
-    border: 1px solid white;
-
-    background-color: lightgrey;
+    /* border: 1px solid white; */
+    
+    display: flex;
+    justify-content: center;
+    background-color: rgb(99, 99, 99);
       position: absolute;
       z-index: 1000;
       overflow: hidden;
@@ -347,6 +362,7 @@ footer a {
     transform: translateY(-100%);
     transition: transform 0.2s ease;
 
+
   }
 
   nav:target {
@@ -357,7 +373,7 @@ footer a {
 
   nav ul{
     /* background-color: lightgreen; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
     /* margin: 1rem auto 0 auto; */
 
@@ -370,7 +386,7 @@ footer a {
 
 
 
-/* } */
+}
 
 
 
