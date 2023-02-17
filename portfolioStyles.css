@@ -3,12 +3,44 @@
   /* TODO: Finalize color theme choices  */
 
   /* Colors */
-  --mainBackground: #1d1e26;
+  /* --mainBackground: #1d1e26;
   --secondaryBackground: #5e35f2;
   --accentOne: #8c5cf2;
   --accentTwo: #86ff9a;
+  --accentThree: #f20587; */
+  
+  /* black  */
+  --mainBackground: #121212;
+
+  /* contact me  */
+  /* --secondaryBackground: #13005A; */
+  --secondaryBackground: #323232;
+
+  /* icons and projects */
+  /* --accentOne: #1C82AD; */
+  --accentOne: #3F0071;
+  
+  /* Name, Titles menu hamburger  */
+  /* --accentTwo: #03C988; */
+  --accentTwo: #FFAC41;
+
+  /* links and resume */
+  /* --accentThree: #f20587; */
   --accentThree: #f20587;
+
+
+
+
+
   /* visual divider */
+  /* --gradient: linear-gradient(
+    90deg,
+    rgba(253, 29, 29, 1) 0%,
+    rgba(207, 141, 48, 1) 100%
+  );
+  --white: rgb(240, 240, 240);
+  --black: rgb(14, 14, 14); */
+  
   --gradient: linear-gradient(
     90deg,
     rgba(253, 29, 29, 1) 0%,
@@ -17,12 +49,23 @@
   --white: rgb(240, 240, 240);
   --black: rgb(14, 14, 14);
 
+
+
+
   /* TODO: Finalize Font Style Choices  */
 
+  /* Fonts */
+  /* --titleFont: "Hind", sans-serif;
+  --bodyFont: "Montserrat", sans-serif;
+  --font-size: 1.2rem; */
+  
   /* Fonts */
   --titleFont: "Hind", sans-serif;
   --bodyFont: "Montserrat", sans-serif;
   --font-size: 1.2rem;
+  
+
+
 }
 
 /*********** Universal box sizing with inheritance ***********/
