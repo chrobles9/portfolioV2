@@ -4,29 +4,30 @@
 
   /* Colors */
   /* --mainBackground: #1d1e26;
-  --secondaryBackground: #5e35f2;
-  --accentOne: #8c5cf2;
+  --contactBackground: #5e35f2;
+  --icons: #8c5cf2;
   --accentTwo: #86ff9a;
   --accentThree: #f20587; */
 
-  /* black  */
+  /* main page background  */
   --mainBackground: #121212;
-
-  /* contact me  */
-  /* --secondaryBackground: #13005A; */
-  --secondaryBackground: #3fd8d1;
-
-  /* icons and projects */
-  /* --accentOne: #1C82AD; */
-  --accentOne: #6930c3;
-
-  /* Name, Titles menu hamburger  */
-  /* --accentTwo: #03C988; */
-  --accentTwo: #80ffdb;
-
+  /* contact me background color  */
+  --contactBackground: #2f7ac5;
+  /* icons */
+  --icons: #03c9c9;
+  /********** Projects **********/
+  /* project background color  */
+  --projectsBackground: #413caa;
+  /* project title and image border color  */
+  --projectsTitle: #03c9c9;
+  /* Name and menu hamburger color */
+  /* accessibility fail  */
+  --accentTwo: #03c9c9;
   /* links and resume */
-  /* --accentThree: #f20587; */
-  --accentThree: #f20587;
+  /* accessibility fail  */
+  --accentThree: #eb21a5;
+  /* Mobile Menu Background */
+  --menuBackground: #1f1f1f;
 
   /* visual divider */
   /* --gradient: linear-gradient(
@@ -37,11 +38,7 @@
   --white: rgb(240, 240, 240);
   --black: rgb(14, 14, 14); */
 
-  --gradient: linear-gradient(
-    90deg,
-    rgba(253, 29, 29, 1) 0%,
-    rgba(207, 141, 48, 1) 100%
-  );
+  --gradient: linear-gradient(90deg, #eb21a5 50%, #03c9c9 100%);
   --white: rgb(240, 240, 240);
   --black: rgb(14, 14, 14);
 
@@ -133,7 +130,7 @@ a:hover {
 
 /***************** Contact Me Styles *****************/
 .contact {
-  background-color: var(--secondaryBackground);
+  background-color: var(--contactBackground);
   text-align: center;
   margin: 0 auto;
   width: 100%;
@@ -153,7 +150,6 @@ a:hover {
 /* TODO: create a fixed menu when scrolling  ***********/
 
 nav {
-  /* width: 100%; */
   display: block;
   font-family: var(--bodyFont);
   font-size: 80%;
@@ -198,7 +194,7 @@ nav h1 a {
 /***************** Navigation Icon Styles *****************/
 nav [class*="fa-"] {
   font-size: 175%;
-  color: var(--accentOne);
+  color: var(--icons);
 }
 nav h1 [class*="fa-"] {
   font-size: 100%;
@@ -223,7 +219,7 @@ nav h1 [class*="fa-"] {
 }
 .button:hover {
   color: var(--white);
-  background-color: var(--accentOne);
+  background-color: var(--icons);
 }
 
 /****************** Footer Styles  *****************/
@@ -243,7 +239,7 @@ footer ul {
   list-style-type: none;
 }
 footer a {
-  color: var(--accentOne);
+  color: var(--icons);
 }
 .copyright {
   font-size: 0.75rem;
@@ -259,7 +255,7 @@ footer a {
 
 /***************** Styles for Projects section *****************/
 .projects {
-  background-color: var(--accentOne);
+  background-color: var(--projectsBackground);
   padding: 4rem 2rem 10rem;
 }
 .projects h2 {
@@ -268,7 +264,7 @@ footer a {
 }
 .projects h3 {
   font-family: var(--titleFont);
-  color: var(--accentTwo);
+  color: var(--projectsTitle);
 }
 .projects h4 {
   margin: 1rem 0 0 0;
@@ -282,6 +278,7 @@ footer a {
   line-height: 1.5;
   width: 100%;
   margin: 1rem auto;
+  color: var(--white);
 }
 .projectList {
   list-style-type: none;
@@ -296,11 +293,10 @@ footer a {
   margin: 2rem auto 4rem auto;
   width: 90%;
   display: block;
-  /* max-width: 500px; */
   border-radius: 25px;
   padding: 1rem;
-  border-right: 1px solid var(--accentTwo);
-  border-top: 1px solid var(--accentTwo);
+  border-right: 1px solid var(--projectsTitle);
+  border-top: 1px solid var(--projectsTitle);
 }
 
 /* Styles for list of techologies project is built with */
@@ -312,6 +308,14 @@ footer a {
   font-size: 1rem;
   list-style-type: none;
 }
+
+#middleImage {
+  border-top: none;
+  border-right: none;
+  border-left: 1px solid var(--projectsTitle);
+  border-bottom: 1px solid var(--projectsTitle);
+}
+
 /***************** 
             Styles for collapsing menu on smaller viewport
 *****************/
@@ -343,7 +347,7 @@ footer a {
 
     flex-direction: column-reverse;
 
-    background-color: rgb(99, 99, 99);
+    background-color: var(--menuBackground);
     position: absolute;
     z-index: 1000;
     overflow: hidden;
