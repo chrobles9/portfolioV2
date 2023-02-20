@@ -344,8 +344,6 @@ footer a {
   width: 80%;
 }
 
-/* TODO: change close icon position  */
-/* TODO: Add more spacing around hamburger icon  */
 /* TODO: adjust style rules for small, medium and large viewports  */
 /* Styles for smaller viewports  */
 @media (max-width: 450px) {
