@@ -30,14 +30,6 @@
   --menuBackground: #1f1f1f;
 
   /* visual divider */
-  /* --gradient: linear-gradient(
-    90deg,
-    rgba(253, 29, 29, 1) 0%,
-    rgba(207, 141, 48, 1) 100%
-  );
-  --white: rgb(240, 240, 240);
-  --black: rgb(14, 14, 14); */
-
   --gradient: linear-gradient(90deg, #eb21a5 50%, #03c9c9 100%);
   --white: rgb(240, 240, 240);
   --black: rgb(14, 14, 14);
@@ -58,8 +50,8 @@
 /*********** Universal box sizing with inheritance ***********/
 html {
   box-sizing: border-box;
-  /* width: 100%; */
 }
+
 *,
 *:before,
 *:after {
@@ -84,6 +76,7 @@ body {
   background-color: var(--mainBackground);
   /* overflow: hidden; */
 }
+
 /* clear default margin on text elements */
 h1,
 h2,
@@ -91,10 +84,12 @@ h3,
 p {
   margin: 0;
 }
+
 /*********** General links ***********/
 a {
   color: #c5006c;
 }
+
 a:hover {
   color: var(--accentThree);
   text-decoration: none;
@@ -102,18 +97,21 @@ a:hover {
 
 /***************** Intro Styles *****************/
 .aboutMe {
-  padding: 2rem 2rem 10rem;
+  padding: 4rem 2rem 10rem;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .aboutMe p {
   font-size: 1rem;
   line-height: 2;
   margin: 1rem auto;
 }
+
 .aboutMe h2 {
   font-size: 3rem;
 }
+
 .name {
   font-size: 2rem;
   font-family: var(--titleFont);
@@ -123,6 +121,7 @@ a:hover {
   line-height: 1;
   margin: 0.5rem 0;
 }
+
 .intro {
   font-weight: bolder;
   line-height: 1;
@@ -136,10 +135,12 @@ a:hover {
   width: 100%;
   padding: 10rem 2rem;
 }
+
 .contact a {
   color: var(--white);
   text-decoration: none;
 }
+
 .contact p:last-child {
   margin-top: 3rem;
 }
@@ -161,6 +162,7 @@ nav {
   display: block;
   transform: translateY(0);
 }
+
 /* Nav Flex Container */
 nav ul {
   list-style-type: none;
@@ -172,20 +174,24 @@ nav ul {
   margin: auto;
   padding: 0;
 }
+
 nav ul li:first-child {
   /* extend 100% of available space  */
   flex-basis: 100%;
   text-align: center;
 }
+
 nav a {
   text-decoration: none;
   color: var(--white);
   display: block;
 }
+
 nav a:hover,
 nav [class*="fa-"]:hover {
   color: var(--accentThree);
 }
+
 nav h1 a {
   font-family: var(--titleFont);
   font-size: 2rem;
@@ -196,12 +202,14 @@ nav [class*="fa-"] {
   font-size: 175%;
   color: var(--icons);
 }
+
 nav h1 [class*="fa-"] {
   font-size: 100%;
 }
 
 .hamburger,
-.close {
+.close,
+.navName {
   /* visibility: hidden; */
   display: none;
 }
@@ -217,6 +225,7 @@ nav h1 [class*="fa-"] {
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
+
 .button:hover {
   color: var(--white);
   background-color: var(--icons);
@@ -228,6 +237,7 @@ footer {
   margin: 4rem auto 2rem;
   padding: 4rem 0 0 0;
 }
+
 footer ul {
   display: flex;
   justify-content: center;
@@ -238,9 +248,11 @@ footer ul {
   font-size: 2.5rem;
   list-style-type: none;
 }
+
 footer a {
   color: var(--icons);
 }
+
 .copyright {
   font-size: 0.75rem;
 }
@@ -258,18 +270,22 @@ footer a {
   background-color: var(--projectsBackground);
   padding: 4rem 2rem 10rem;
 }
+
 .projects h2 {
   font-size: 2.5rem;
   margin-bottom: calc(2.5rem * 1.5);
 }
+
 .projects h3 {
   font-family: var(--titleFont);
   color: var(--projectsTitle);
 }
+
 .projects h4 {
   margin: 1rem 0 0 0;
   font-size: 1rem;
 }
+
 .projects p {
   font-size: 1rem;
   background-color: var(--mainBackground);
@@ -280,15 +296,18 @@ footer a {
   margin: 1rem auto;
   color: var(--white);
 }
+
 .projectList {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 .projectItem {
   width: 100%;
   margin: 0 auto;
 }
+
 .projects img {
   margin: 2rem auto 4rem auto;
   width: 90%;
@@ -333,10 +352,19 @@ footer a {
   .hamburger,
   .close {
     display: block;
-
     font-size: 2rem;
     color: var(--accentTwo);
     padding: 1rem;
+  }
+
+  .hamburger {
+    position: fixed;
+    background-color: #121212;
+    width: 100%;
+  }
+
+  .navName {
+    display: block;
   }
 
   nav {
@@ -344,18 +372,15 @@ footer a {
     /* border: 1px solid white; */
 
     display: flex;
-
     flex-direction: column-reverse;
-
     background-color: var(--menuBackground);
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     overflow: hidden;
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
-
     /* Move Nav off viewport when triggered */
     transform: translateY(-100%);
     transition: transform 0.2s ease;
@@ -375,7 +400,6 @@ footer a {
 
     display: flex;
     width: 100%;
-
     flex-flow: column;
     gap: 1rem;
     padding: 0;
