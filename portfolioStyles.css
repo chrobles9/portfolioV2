@@ -1,14 +1,7 @@
+/* TODO: Delete unused styles  */
+
 /* Variables for portfolio's fonts and color themes */
 :root {
-  /* TODO: Finalize color theme choices  */
-
-  /* Colors */
-  /* --mainBackground: #1d1e26;
-  --contactBackground: #5e35f2;
-  --icons: #8c5cf2;
-  --accentTwo: #86ff9a;
-  --accentThree: #f20587; */
-
   /* main page background  */
   --mainBackground: #121212;
   /* contact me background color  */
@@ -78,14 +71,20 @@ p {
   margin: 0;
 }
 
+h2 {
+  margin-bottom: calc(2.2rem * 1.5);
+}
+
 /*********** General links ***********/
 a {
-  color: #c5006c;
+  color: var(--accentThree);
 }
 
 a:hover {
-  color: var(--accentThree);
+  /* text-decoration: underline; */
+  color: #c5006c;
   text-decoration: none;
+  font-style: italic;
 }
 
 /***************** Intro Styles *****************/
@@ -129,31 +128,51 @@ a:hover {
   padding: 10rem 2rem;
 }
 
+.contact h2 {
+  text-align: left;
+}
+
 .contact a {
   color: var(--white);
   text-decoration: none;
 }
 
+.contact p {
+  padding: 1rem 0;
+}
+
 .contact p:last-child {
   margin-top: 3rem;
+  /* text-align: center; */
 }
 
 /***************** Navigation Styles *****************/
-
-/* TODO: Add css pattern background  ***********/
-/* TODO: create a fixed menu when scrolling  ***********/
 
 nav {
   display: block;
   font-family: var(--bodyFont);
   font-size: 80%;
   padding: 1rem;
-  position: static;
-  width: auto;
+  /* position: static; */
+
+  position: fixed;
+  width: 100%;
+
+  /* width: auto; */
+
   height: auto;
   overflow: auto;
   display: block;
   transform: translateY(0);
+
+  background: repeating-linear-gradient(
+      135deg,
+      #2b2b2b 0%,
+      #2b2b2b 10%,
+      #222222 0%,
+      #222222 50%
+    )
+    0 / 15px 15px;
 }
 
 /* Nav Flex Container */
@@ -201,8 +220,7 @@ nav h1 [class*="fa-"] {
 }
 
 .hamburger,
-.close,
-.navName {
+.close {
   /* visibility: hidden; */
   display: none;
 }
@@ -217,10 +235,11 @@ nav h1 [class*="fa-"] {
   background-color: var(--accentThree);
   padding: 0.5rem 1rem;
   border-radius: 5px;
+  /* text-decoration: none; */
 }
 
 .button:hover {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--icons);
 }
 
@@ -236,7 +255,7 @@ footer ul {
   justify-content: center;
   gap: 3rem;
   flex-flow: row wrap;
-  margin: 1rem 0;
+  margin: 2rem auto;
   padding: 0;
   font-size: 2.5rem;
   list-style-type: none;
@@ -244,6 +263,15 @@ footer ul {
 
 footer a {
   color: var(--icons);
+}
+
+.nameTitleContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  margin: auto 1rem;
 }
 
 .copyright {
@@ -266,7 +294,7 @@ footer a {
 
 .projects h2 {
   font-size: 2.5rem;
-  margin-bottom: calc(2.5rem * 1.5);
+  /* margin-bottom: calc(2.5rem * 1.5); */
 }
 
 .projects h3 {
@@ -311,6 +339,10 @@ footer a {
   border-top: 1px solid var(--projectsTitle);
 }
 
+.indent {
+  text-indent: 2rem;
+}
+
 /* Styles for list of techologies project is built with */
 .techList {
   display: flex;
@@ -339,9 +371,12 @@ footer a {
 
 /* TODO: adjust style rules for small, medium and large viewports  */
 
-/* TODO: Increase font sizing for mobile menus  */
 /* Styles for smaller viewports  */
 @media (max-width: 450px) {
+  body {
+    font-size: 1.5rem;
+  }
+
   .hamburger,
   .close {
     display: block;
@@ -352,7 +387,17 @@ footer a {
 
   .hamburger {
     position: fixed;
-    background-color: #121212;
+    /* background-color: #121212; */
+
+    background: repeating-linear-gradient(
+        135deg,
+        #2b2b2b 0%,
+        #2b2b2b 10%,
+        #222222 0%,
+        #222222 50%
+      )
+      0 / 15px 15px;
+
     width: 100%;
   }
 
@@ -368,7 +413,17 @@ footer a {
 
     display: flex;
     flex-direction: column-reverse;
-    background-color: var(--menuBackground);
+    /* background-color: var(--menuBackground); */
+
+    background: repeating-linear-gradient(
+        135deg,
+        #2b2b2b 0%,
+        #2b2b2b 10%,
+        #222222 0%,
+        #222222 50%
+      )
+      0 / 15px 15px;
+
     position: fixed;
     z-index: 1000;
     overflow: hidden;
@@ -403,14 +458,42 @@ footer a {
   .projects img {
     width: 100%;
   }
+
+  .contact p:last-child {
+    text-align: center;
+  }
+}
+
+/* Footer styles for mobile viewports */
+@media (max-width: 575px) {
+  footer {
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .nameTitleContainer {
+    flex-flow: column wrap;
+    gap: 0;
+    line-height: 0.8;
+  }
+  .nameFooter {
+    font-size: 1.5rem;
+  }
+  .titleFooter {
+    font-size: 1.3rem;
+  }
 }
 
 /***************** Styles for larger viewports *****************/
 @media (min-width: 800px) {
   nav {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
   }
+
+  nav ul {
+    width: 75%;
+  }
+
   /* Aligns h1 with the rest of navigation links  */
   nav ul li:first-child {
     flex-basis: auto;
@@ -437,9 +520,11 @@ footer a {
     grid-column: 1/4;
     grid-row: 1/2;
   }
-  .text p {
+
+  /* .text p {
     text-indent: 2rem;
-  }
+  } */
+
   .projectItem img {
     margin: 1rem auto;
     width: 100%;

@@ -24,7 +24,6 @@
         <span class="sr-only">Open main menu</span>
         <span class="fas fa-bars" aria-hidden="true"></span>
       </a>
-      <!-- TODO: adjust nav menu item spacing and size  -->
       <nav id="navbar">
         <ul>
           <li>
@@ -126,7 +125,7 @@
             <div class="text">
               <h4>Latest Project</h4>
               <h3>Project Title #1</h3>
-              <p>
+              <p class="indent">
                 Description of the project. This should be fairly concise while
                 also describing the key components that you developed or worked
                 on. It can be as long as you need it to be but should at least
@@ -153,7 +152,7 @@
             <div class="text middleText">
               <h4>E-Commerce Project</h4>
               <h3>PopLocker</h3>
-              <p>
+              <p class="indent">
                 Description of the project. This should be fairly concise while
                 also describing the key components that you developed or worked
                 on. It can be as long as you need it to be but should at least
@@ -184,7 +183,7 @@
             <div class="text">
               <h4>Project Description #3</h4>
               <h3>Project Title #3</h3>
-              <p>
+              <p class="indent">
                 Description of the project. This should be fairly concise while
                 also describing the key components that you developed or worked
                 on. It can be as long as you need it to be but should at least
@@ -215,24 +214,30 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-      <h2>Contact Me</h2>
-      <p>Interested in collaborating?</p>
-      <p>Let's get started on a project and make the web a better place!</p>
-      <!-- email link  -->
-
-      <p>
-        <!-- TODO: Use php for email mailer  -->
-        <!-- temporary email inserted -->
-        <a href="mailto:tempemail@gmail.com" class="button">Email Me</a>
-      </p>
+      <div class="contentWidth">
+        <h2>Contact Me</h2>
+        <p>Interested in collaborating?</p>
+        <p>Let's get started on a project and make the web a better place!</p>
+        <!-- email link  -->
+        
+        <p>
+          <!-- TODO: Use php for email mailer  -->
+          <!-- temporary email inserted -->
+          <a href="mailto:tempemail@gmail.com" class="button">Email Me</a>
+        </p>
+      </div>
     </section>
 
     <!-- div for visual divider between content sections -->
     <div class="divider"></div>
 
     <footer>
-      <!-- TODO: seperate name and title and two different lines -->
-      <h2>Carlos Robles &middot; Web Developer</h2>
+      <div class="nameTitleContainer">  
+        <p class="nameFooter">Carlos Robles</p>
+        <p>&middot;</p>
+        <p class="titleFooter">Web Developer</p>
+      </div>
+      
       <ul>
         <li>
           <a href="#linkedin">
