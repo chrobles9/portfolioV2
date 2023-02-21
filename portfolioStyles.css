@@ -399,6 +399,10 @@ footer a {
     gap: 1rem;
     padding: 0;
   }
+
+  .projects img {
+    width: 100%;
+  }
 }
 
 /***************** Styles for larger viewports *****************/
