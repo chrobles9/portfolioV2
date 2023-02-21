@@ -34,15 +34,8 @@
   --white: rgb(240, 240, 240);
   --black: rgb(14, 14, 14);
 
-  /* TODO: Finalize Font Style Choices  */
-
   /* Fonts */
-  /* --titleFont: "Hind", sans-serif;
-  --bodyFont: "Montserrat", sans-serif;
-  --font-size: 1.2rem; */
-
-  /* Fonts */
-  --titleFont: "Hind", sans-serif;
+  --titleFont: "Sanchez", sans-serif;
   --bodyFont: "Montserrat", sans-serif;
   --font-size: 1.2rem;
 }
@@ -345,6 +338,8 @@ footer a {
 }
 
 /* TODO: adjust style rules for small, medium and large viewports  */
+
+/* TODO: Increase font sizing for mobile menus  */
 /* Styles for smaller viewports  */
 @media (max-width: 450px) {
   .hamburger,
