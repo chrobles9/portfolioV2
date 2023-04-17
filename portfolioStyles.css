@@ -11,7 +11,7 @@
   --icons: #03c9c9;
   /********** Projects **********/
   /* project background color  */
-  --projectsBackground: #413caa;
+  --projectsBackground: #6e5494;
   /* project title and image border color  */
   --projectsTitle: #03c9c9;
   /* Name and menu hamburger color */
@@ -45,23 +45,23 @@ html {
   box-sizing: inherit;
 }
 
-/* * {
-  border: 1px solid red;
-} */
+* {
+  /* border: 1px solid red; */
+}
 
 /*********** main web page styling ***********/
 body {
-  /* width: 100%; */
   /* clear browser inserted margins  */
   margin: 0;
   padding: 0;
-  /* general font  */
+
+  /* Body text font  */
   font-size: var(--font-size);
   font-family: var(--bodyFont);
   color: var(--white);
+
   /* general background color  */
   background-color: var(--mainBackground);
-  /* overflow: hidden; */
 }
 
 /* clear default margin on text elements */
@@ -75,95 +75,21 @@ p {
 h2 {
   margin-bottom: calc(2.2rem * 1.5);
   margin-top: 2rem;
-
-  
-
-
 }
 
 /*********** General links ***********/
 a {
   color: var(--accentThree);
 
-
+  /* timing for hover color transition */
   transition: all 0.5s ease 0s;
-
 }
 
-a:hover{
-  color: #c5006c;
+a:hover {
+  color: #03c9c9;
   text-decoration: none;
-  /* font-style: italic; */
-
-
-  /* box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4); */
+  /* links animate on Y axis on hover */
   transform: translateY(-7px);
-}
-
-
-/***************** Intro Styles *****************/
-/* #about {
-  margin-top: 3rem;
-} */
-
-.aboutMe {
-  padding: 7rem 2rem 10rem;
-  max-width: 1200px;
-  /* margin-top: 2rem; */
-}
-
-.aboutMe p {
-  font-size: 1rem;
-  line-height: 2;
-  margin: 1rem auto;
-}
-
-
-
-.aboutMe h2 {
-  font-size: 3rem;
-}
-
-.name {
-  font-size: 2rem;
-  font-family: var(--titleFont);
-  color: var(--accentTwo);
-  /* Set name on indiviual line */
-  display: block;
-  line-height: 1;
-  margin: 0.5rem 0;
-}
-
-.intro {
-  font-weight: bolder;
-  line-height: 1;
-}
-
-/***************** Contact Me Styles *****************/
-.contact {
-  background-color: var(--contactBackground);
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-  padding: 10rem 2rem;
-}
-
-.contact h2 {
-  text-align: left;
-}
-
-.contact a {
-  color: var(--white);
-  text-decoration: none;
-}
-
-.contact p {
-  padding: 1rem 0;
-}
-
-.contact p:last-child {
-  margin-top: 3rem;
-  /* text-align: center; */
 }
 
 /***************** Navigation Styles *****************/
@@ -174,19 +100,12 @@ nav {
   font-size: 80%;
   padding: 1rem;
   position: static;
-
-  /* position: fixed; */
   width: 100%;
-
-  /* width: auto; */
-
   height: auto;
   overflow: auto;
   display: block;
   transform: translateY(0);
-
-  background: #121212;
-
+  /* background: #121212; */
 }
 
 /* Nav Flex Container */
@@ -251,8 +170,6 @@ nav h1 [class*="fa-"] {
   border-radius: 5px;
   /* text-decoration: none; */
 
-  
-
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
 }
@@ -263,7 +180,70 @@ nav h1 [class*="fa-"] {
 
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
 
-  transform: translateY(-7px);
+  /* transform: translateY(-7px); */
+}
+
+/***************** Intro Styles *****************/
+/* #about {
+  margin-top: 3rem;
+} */
+
+.aboutMe {
+  padding: 7rem 2rem 10rem;
+  max-width: 1200px;
+  /* margin-top: 2rem; */
+}
+
+.aboutMe p {
+  font-size: 1rem;
+  line-height: 2;
+  margin: 1rem auto;
+}
+
+.aboutMe h2 {
+  font-size: 3rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-family: var(--titleFont);
+  color: var(--accentTwo);
+  /* Set name on indiviual line */
+  display: block;
+  line-height: 1;
+  margin: 0.5rem 0;
+}
+
+.intro {
+  font-weight: bolder;
+  line-height: 1;
+}
+
+/***************** Contact Me Styles *****************/
+.contact {
+  background-color: var(--contactBackground);
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10rem 2rem;
+}
+
+.contact h2 {
+  text-align: left;
+}
+
+.contact a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.contact p {
+  padding: 1rem 0;
+}
+
+.contact p:last-child {
+  margin-top: 3rem;
+  /* text-align: center; */
 }
 
 /****************** Footer Styles  *****************/
@@ -286,6 +266,9 @@ footer ul {
 
 footer a {
   color: var(--icons);
+}
+footer a:hover {
+  color: #c5006c;
 }
 
 .nameTitleContainer {
@@ -341,7 +324,6 @@ footer a {
   color: var(--white);
 
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-
 }
 
 .projectList {
@@ -363,9 +345,6 @@ footer a {
   padding: 1rem;
   border-right: 1px solid var(--projectsTitle);
   border-top: 1px solid var(--projectsTitle);
-
-  
-
 }
 
 .indent {
