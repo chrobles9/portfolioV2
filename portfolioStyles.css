@@ -45,9 +45,9 @@ html {
   box-sizing: inherit;
 }
 
-* {
-  /* border: 1px solid red; */
-}
+/* * {
+  border: 1px solid red;
+} */
 
 /*********** main web page styling ***********/
 body {
@@ -286,10 +286,55 @@ footer a:hover {
 
 /***************** Visual Divider Styles *****************/
 .divider {
-  height: 2px;
+  height: 3px;
   width: 100%;
   background: rgb(253, 29, 29);
   background: var(--gradient);
+
+  background-size: 400% 400%;
+
+  -webkit-animation: gradientAnimate 17s ease infinite;
+  -moz-animation: gradientAnimate 17s ease infinite;
+  animation: gradientAnimate 17s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimate {
+  0% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+@-moz-keyframes gradientAnimate {
+  0% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+@keyframes gradientAnimate {
+  0% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+/* First divider at top of page */
+.divider:first-of-type {
+  height: 5px;
 }
 
 /***************** Styles for Projects section *****************/
@@ -481,6 +526,10 @@ footer a:hover {
   }
   .titleFooter {
     font-size: 1.3rem;
+  }
+
+  h1 {
+    margin-bottom: 3rem;
   }
 }
 
