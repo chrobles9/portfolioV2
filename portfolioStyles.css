@@ -24,13 +24,13 @@
   --menuBackground: #1f1f1f;
   /* Linear Gradient  */
   --linearGradient: repeating-linear-gradient(
-    135deg,
-    #2b2b2b 0%,
-    #2b2b2b 10%,
-    #222222 0%,
-    #222222 50%
-  )
-  0 / 15px 15px;
+      135deg,
+      #2b2b2b 0%,
+      #2b2b2b 10%,
+      #222222 0%,
+      #222222 50%
+    )
+    0 / 15px 15px;
 
   /* visual divider */
   --gradient: linear-gradient(90deg, #eb21a5 50%, #03c9c9 100%);
@@ -90,6 +90,11 @@ h2 {
   text-align: left;
 }
 
+.maxWidth {
+  width: 80%;
+  margin: 0 auto;
+}
+
 /*********** General links ***********/
 a {
   color: var(--accentThree);
@@ -118,9 +123,7 @@ nav {
   overflow: auto;
   display: block;
   transform: translateY(0);
-
 }
-
 
 /* Nav Flex Container */
 nav ul {
@@ -133,9 +136,7 @@ nav ul {
   margin: auto;
   padding: 0;
 
-
   background-color: var(--linearGradient);
-
 }
 
 nav ul li:first-child {
@@ -149,23 +150,26 @@ nav a {
   color: var(--white);
   display: block;
 }
+
+/* Remove hover color from icon */
 #navHeading :first-child {
   color: var(--icons);
 }
+
+
+
+
+
 
 nav a:hover,
 nav [class*="fa-"]:hover {
   color: var(--accentThree);
 }
 
-
-
 nav h1 {
   font-family: var(--titleFont);
   font-size: 2rem;
 }
-
-
 
 /***************** Navigation Icon Styles *****************/
 nav [class*="fa-"] {
@@ -214,7 +218,7 @@ nav h1 [class*="fa-"] {
 } */
 
 .aboutMe {
-  padding: 7rem 2rem 10rem;
+  padding: 4rem 2rem 10rem;
   max-width: 1200px;
   /* margin-top: 2rem; */
 }
@@ -250,7 +254,7 @@ nav h1 [class*="fa-"] {
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  padding: 10rem 2rem;
+  padding: 4rem 2rem 10rem;
 }
 
 /* .contact h2 {
@@ -450,12 +454,12 @@ footer a:hover {
 /* TODO: adjust style rules for small, medium and large viewports  */
 
 /* Styles for smaller viewports  */
-@media (max-width: 500px) {
+@media (max-width: 575px) {
   body {
     font-size: 1.5rem;
   }
 
-  h2{
+  h2 {
     text-align: center;
   }
 
@@ -540,10 +544,10 @@ footer a:hover {
   .contact p:last-child {
     text-align: center;
   }
-}
+  /* } */
 
-/* Footer styles for mobile viewports */
-@media (max-width: 575px) {
+  /* Footer styles for mobile viewports */
+  /* @media (max-width: 575px) { */
   footer {
     padding: 0;
     margin-top: 2rem;
@@ -573,9 +577,9 @@ footer a:hover {
     padding: 2rem 0;
   }
 
-  nav ul {
+  /* nav ul {
     width: 75%;
-  }
+  } */
 
   /* Aligns h1 with the rest of navigation links  */
   nav ul li:first-child {
@@ -617,9 +621,11 @@ footer a:hover {
     grid-row: 1/2;
   }
 
-  .contentWidth {
+  /* styles for content widths  */
+  .maxWidth {
     margin: 0 auto;
     width: 70%;
+    max-width: 1200px;
   }
 
   .middleText {
