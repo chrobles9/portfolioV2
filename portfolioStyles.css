@@ -133,11 +133,15 @@ nav a {
 }
 
 nav a:hover,
-nav [class*="fa-"]:hover {
+nav [class*="fa-"]:hover:not(:first-child) {
   color: var(--accentThree);
 }
 
-nav h1 a {
+/* nav h1 a {
+  font-family: var(--titleFont);
+  font-size: 2rem;
+} */
+nav h1 {
   font-family: var(--titleFont);
   font-size: 2rem;
 }
