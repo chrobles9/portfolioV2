@@ -22,6 +22,15 @@
   --accentThree: #eb21a5;
   /* Mobile Menu Background */
   --menuBackground: #1f1f1f;
+  /* Linear Gradient  */
+  --linearGradient: repeating-linear-gradient(
+    135deg,
+    #2b2b2b 0%,
+    #2b2b2b 10%,
+    #222222 0%,
+    #222222 50%
+  )
+  0 / 15px 15px;
 
   /* visual divider */
   --gradient: linear-gradient(90deg, #eb21a5 50%, #03c9c9 100%);
@@ -50,6 +59,9 @@ html {
 } */
 
 /*********** main web page styling ***********/
+/* header {
+  background-color: var(--linearGradient);
+} */
 body {
   /* clear browser inserted margins  */
   margin: 0;
@@ -75,6 +87,7 @@ p {
 h2 {
   margin-bottom: calc(2.2rem * 1.5);
   margin-top: 2rem;
+  text-align: left;
 }
 
 /*********** General links ***********/
@@ -105,8 +118,9 @@ nav {
   overflow: auto;
   display: block;
   transform: translateY(0);
-  /* background: #121212; */
+
 }
+
 
 /* Nav Flex Container */
 nav ul {
@@ -118,6 +132,10 @@ nav ul {
   gap: 2rem;
   margin: auto;
   padding: 0;
+
+
+  background-color: var(--linearGradient);
+
 }
 
 nav ul li:first-child {
@@ -131,20 +149,23 @@ nav a {
   color: var(--white);
   display: block;
 }
+#navHeading :first-child {
+  color: var(--icons);
+}
 
 nav a:hover,
-nav [class*="fa-"]:hover:not(:first-child) {
+nav [class*="fa-"]:hover {
   color: var(--accentThree);
 }
 
-/* nav h1 a {
-  font-family: var(--titleFont);
-  font-size: 2rem;
-} */
+
+
 nav h1 {
   font-family: var(--titleFont);
   font-size: 2rem;
 }
+
+
 
 /***************** Navigation Icon Styles *****************/
 nav [class*="fa-"] {
@@ -232,9 +253,9 @@ nav h1 [class*="fa-"] {
   padding: 10rem 2rem;
 }
 
-.contact h2 {
+/* .contact h2 {
   text-align: left;
-}
+} */
 
 .contact a {
   color: var(--white);
@@ -434,6 +455,15 @@ footer a:hover {
     font-size: 1.5rem;
   }
 
+  h2{
+    text-align: center;
+  }
+
+  .aboutMe h2 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+
   .hamburger,
   .close {
     display: block;
@@ -454,6 +484,10 @@ footer a:hover {
     display: block;
   }
 
+  .divider:first-of-type {
+    height: 10px;
+  }
+
   nav {
     /* padding: 0; */
     /* border: 1px solid white; */
@@ -463,16 +497,10 @@ footer a:hover {
     display: flex;
     flex-direction: column-reverse;
     /* background-color: var(--menuBackground); */
-    background-color: #121212;
+    /* background-color: #121212; */
+    /* background-color: white; */
 
-    /* background: repeating-linear-gradient(
-        135deg,
-        #2b2b2b 0%,
-        #2b2b2b 10%,
-        #222222 0%,
-        #222222 50%
-      )
-      0 / 15px 15px; */
+    background: var(--linearGradient);
 
     position: fixed;
     z-index: 1000;
@@ -532,13 +560,13 @@ footer a:hover {
     font-size: 1.3rem;
   }
 
-  h1 {
+  /* h1 {
     margin-bottom: 3rem;
-  }
+  } */
 }
 
 /***************** Styles for larger viewports *****************/
-@media (min-width: 800px) {
+@media (min-width: 1040px) {
   nav {
     /* max-width: 1200px; */
     margin: 0 auto;
