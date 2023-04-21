@@ -272,6 +272,7 @@ nav h1 [class*="fa-"] {
 }
 
 /****************** Footer Styles  *****************/
+/* TODO: Match footer links with navigation links  */
 footer {
   text-align: center;
   margin: 4rem auto 2rem;
@@ -289,12 +290,12 @@ footer ul {
   list-style-type: none;
 }
 
-footer a {
+/* footer a {
   color: var(--icons);
 }
 footer a:hover {
   color: #c5006c;
-}
+} */
 
 .nameTitleContainer {
   display: flex;
