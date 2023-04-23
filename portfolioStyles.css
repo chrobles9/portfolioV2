@@ -214,6 +214,9 @@ nav h1 [class*="fa-"] {
   max-width: 1200px;
   /* margin-top: 2rem; */
 }
+#aboutTitle {
+  font-size: 3rem;
+}
 
 .aboutMe p {
   font-size: 1rem;
@@ -221,9 +224,6 @@ nav h1 [class*="fa-"] {
   margin: 1rem auto;
 }
 
-.aboutMe h2 {
-  font-size: 3rem;
-}
 
 .name {
   font-size: 2rem;
