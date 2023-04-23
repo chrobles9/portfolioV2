@@ -66,7 +66,7 @@ body {
   /* clear browser inserted margins  */
   margin: 0;
   padding: 0;
-  
+
   /* Body text font  */
   font-size: var(--font-size);
   font-family: var(--bodyFont);
@@ -89,7 +89,6 @@ h2 {
   margin-top: 2rem;
   text-align: left;
 }
-
 
 /*********** General links ***********/
 a {
@@ -152,13 +151,9 @@ nav a {
   color: var(--icons);
 }
 
-
-
-
-
-
 nav a:hover,
-nav [class*="fa-"]:hover {
+nav [class*="fa-"]:hover,
+footer a:hover {
   color: var(--accentThree);
 }
 
@@ -168,7 +163,7 @@ nav h1 {
 }
 
 /***************** Navigation Icon Styles *****************/
-nav [class*="fa-"] {
+nav [class*="fa-"], footer a {
   font-size: 175%;
   color: var(--icons);
 }
@@ -195,6 +190,7 @@ nav h1 [class*="fa-"] {
   border-radius: 5px;
   /* text-decoration: none; */
 
+  display: block;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
 }
@@ -290,12 +286,15 @@ footer ul {
   list-style-type: none;
 }
 
-/* footer a {
-  color: var(--icons);
+.email {
+  width: 10em;
+  /* max-width: 350px; */
+  margin: 0 auto;
 }
-footer a:hover {
-  color: #c5006c;
-} */
+
+footer a {
+  display: block;
+}
 
 .nameTitleContainer {
   display: flex;
