@@ -163,7 +163,8 @@ nav h1 {
 }
 
 /***************** Navigation Icon Styles *****************/
-nav [class*="fa-"], footer a {
+nav [class*="fa-"],
+footer a {
   font-size: 175%;
   color: var(--icons);
 }
@@ -224,7 +225,6 @@ nav h1 [class*="fa-"] {
   margin: 1rem auto;
 }
 
-
 .name {
   font-size: 2rem;
   font-family: var(--titleFont);
@@ -278,11 +278,18 @@ footer ul {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   margin: 2rem auto;
   padding: 0;
   font-size: 2.5rem;
   list-style-type: none;
+}
+
+.footerLogos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .email {
@@ -554,22 +561,20 @@ footer a {
   footer {
     padding: 0;
     margin-top: 2rem;
+    display: block;
+    /* flex-flow: column wrap; */
   }
   .nameTitleContainer {
     flex-flow: column wrap;
+    /* display: block; */
     gap: 0;
     line-height: 0.8;
-  }
-  .nameFooter {
     font-size: 1.5rem;
   }
-  .titleFooter {
-    font-size: 1.3rem;
+  .footerLogos {
+    font-size: 1.5rem;
+    gap: 2rem;
   }
-
-  /* h1 {
-    margin-bottom: 3rem;
-  } */
 }
 
 /***************** Styles for larger viewports *****************/
