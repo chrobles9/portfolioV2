@@ -302,6 +302,8 @@ footer a {
   gap: 1rem;
   font-size: 2rem;
   margin: auto 1rem;
+  color: var(--white);
+  text-decoration: none;
 }
 
 .copyright {
