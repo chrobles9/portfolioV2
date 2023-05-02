@@ -241,22 +241,32 @@ nav h1 [class*="fa-"] {
 }
 
 /***************** Contact Me Styles *****************/
+.backToTop {
+  color: var(--accentTwo);
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  margin-top: 10rem;
+}
+
+.backToTop:hover {
+  color: var(--accentThree);
+}
+
 .contact {
   background-color: var(--contactBackground);
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  padding: 4rem 2rem 10rem;
+  padding: 4rem 2rem 2rem;
 }
 
 /* .contact h2 {
   text-align: left;
 } */
 
-.contact a {
-  color: var(--white);
-  text-decoration: none;
-}
+/* .contact a {
+} */
 
 .contact p {
   padding: 1rem 0;
@@ -265,6 +275,14 @@ nav h1 [class*="fa-"] {
 .contact p:last-child {
   margin-top: 3rem;
   /* text-align: center; */
+}
+
+.email {
+  color: var(--white);
+  text-decoration: none;
+  width: 10em;
+  /* max-width: 350px; */
+  margin: 0 auto;
 }
 
 /****************** Footer Styles  *****************/
@@ -292,11 +310,7 @@ footer ul {
   gap: 3rem;
 }
 
-.email {
-  width: 10em;
-  /* max-width: 350px; */
-  margin: 0 auto;
-}
+
 
 footer a {
   display: block;
@@ -560,7 +574,7 @@ footer a {
   /* @media (max-width: 575px) { */
   footer {
     padding: 0;
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: block;
     /* flex-flow: column wrap; */
   }
