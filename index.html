@@ -37,19 +37,25 @@
         <span class="fas fa-bars" aria-hidden="true"></span>
       </a>
       <nav id="navbar">
+        <!-- TODO: Link logo/name to home page -->
         <ul>
           <li>
-            <h1 id="navHeading">
-              <!-- TODO: Link logo/name to home page -->
+            <!-- <h1 id="navHeading">
               <span class="fa-solid fa-jedi" aria-hidden="true"></span>
               <span class="navName">Carlos Robles</span>
-            </h1>
+            </h1> -->
+            <a id="navHeading">
+              <h1 class="navName" href="index.html">
+                <span class="fa-solid fa-jedi" aria-hidden="true"></span>Carlos
+                Robles
+              </h1>
+            </a>
           </li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" class="hoverAnimate">About</a></li>
+          <li><a href="#projects" class="hoverAnimate">Projects</a></li>
+          <li><a href="#contact" class="hoverAnimate">Contact</a></li>
           <li>
-            <a href="https://codepen.io/chrobles9">
+            <a href="https://codepen.io/chrobles9" class="hoverAnimate">
               <!-- icons hidden from screenreaders -->
               <span
                 title="CodePen"
@@ -60,7 +66,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/chrobles9">
+            <a href="https://github.com/chrobles9" class="hoverAnimate">
               <!-- icons hidden from screenreaders -->
               <span
                 title="GitHub"
@@ -71,7 +77,7 @@
             </a>
           </li>
           <!-- TODO: Add resume -->
-          <li><a href="#Resume" class="button">Resume</a></li>
+          <li><a href="#Resume" class="button hoverAnimate">Resume</a></li>
         </ul>
         <a class="close" href="#" aria-label="Close main menu">
           <span class="sr-only">Close main menu</span>
@@ -240,11 +246,11 @@
           <p>
             <!-- TODO: Use php for email mailer  -->
             <!-- temporary email inserted -->
-            <a href="mailto:tempemail@gmail.com" class="button email"
+            <a href="mailto:tempemail@gmail.com" class="button email hoverAnimate"
               >Email Me</a
             >
           </p>
-          <a href="#topDiv" class="backToTop">
+          <a href="#topDiv" class="backToTop hoverAnimate">
             <span class="fa-sharp fa-regular fa-circle-up"></span>
             <span>Back to Top</span>
             <span class="fa-sharp fa-regular fa-circle-up"></span>
@@ -267,7 +273,7 @@
         </li>
         <div class="footerLogos">
           <li>
-            <a href="https://codepen.io/chrobles9">
+            <a href="https://codepen.io/chrobles9" class="hoverAnimate">
               <!-- icons hidden from screenreaders -->
               <span
                 title="CodePen"
@@ -278,7 +284,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/chrobles9">
+            <a href="https://github.com/chrobles9" class="hoverAnimate">
               <!-- icons hidden from screenreaders -->
               <span
                 title="GitHub"
@@ -290,7 +296,7 @@
           </li>
           <li>
             <!-- TODO: Add email  -->
-            <a href="mailto:tempemail@gmail.com">
+            <a href="mailto:tempemail@gmail.com" class="hoverAnimate">
               <!-- icons hidden from screenreaders -->
               <span
                 title="Email Me"

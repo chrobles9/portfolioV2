@@ -102,7 +102,7 @@ a:hover {
   color: #03c9c9;
   text-decoration: none;
   /* links animate on Y axis on hover */
-  transform: translateY(-7px);
+  /* transform: translateY(-7px); */
 }
 
 /***************** Navigation Styles *****************/
@@ -146,9 +146,16 @@ nav a {
   display: block;
 }
 
+
 /* Remove hover color from icon */
 #navHeading :first-child {
   color: var(--icons);
+}
+
+
+.hoverAnimate:hover {
+    /* links animate on Y axis on hover */
+    transform: translateY(-7px);
 }
 
 nav a:hover,
@@ -177,6 +184,10 @@ nav h1 [class*="fa-"] {
 .close {
   /* visibility: hidden; */
   display: none;
+}
+
+.hamburger:hover {
+  color: var(--accentThree);
 }
 
 .close {
@@ -309,8 +320,6 @@ footer ul {
   justify-content: center;
   gap: 3rem;
 }
-
-
 
 footer a {
   display: block;
