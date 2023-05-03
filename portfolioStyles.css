@@ -147,10 +147,19 @@ nav a {
 }
 
 
+
+
+/* TODO: FINSIH LOGO AND H1 ALIGNMENT  */
+/* #navHeading {
+  display: inline;
+} */
+
 /* Remove hover color from icon */
 #navHeading :first-child {
   color: var(--icons);
 }
+
+
 
 
 .hoverAnimate:hover {
