@@ -279,7 +279,7 @@ nav h1 [class*="fa-"] {
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  padding: 4rem 2rem 2rem;
+  padding: 4rem 2rem;
 }
 
 /* .contact h2 {
@@ -406,13 +406,13 @@ footer a {
 /***************** Styles for Projects section *****************/
 .projects {
   background-color: var(--projectsBackground);
-  padding: 4rem 2rem 10rem;
+  padding: 4rem 2rem;
 }
 
-.projects h2 {
-  /* font-size: 2.5rem; */
-  /* margin-bottom: calc(2.5rem * 1.5); */
-}
+/* .projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+} */
 
 .projects h3 {
   font-family: var(--titleFont);
