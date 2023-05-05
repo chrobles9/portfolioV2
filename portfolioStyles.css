@@ -84,6 +84,7 @@ p {
   margin: 0;
 }
 
+/* TODO: correct project h2 font size compare to aboutme and contactment font size */
 h2 {
   margin-bottom: calc(2.2rem * 1.5);
   margin-top: 2rem;
@@ -266,7 +267,7 @@ nav h1 [class*="fa-"] {
   text-decoration: none;
   font-size: 1rem;
   display: block;
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .backToTop:hover {
@@ -409,7 +410,7 @@ footer a {
 }
 
 .projects h2 {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   /* margin-bottom: calc(2.5rem * 1.5); */
 }
 
@@ -447,7 +448,7 @@ footer a {
   margin: 0 auto;
 }
 
-.projects img {
+.projectPhoto {
   margin: 2rem auto 4rem auto;
   width: 90%;
   display: block;
@@ -456,6 +457,15 @@ footer a {
   border-right: 1px solid var(--projectsTitle);
   border-top: 1px solid var(--projectsTitle);
 }
+/* .projects img {
+  margin: 2rem auto 4rem auto;
+  width: 90%;
+  display: block;
+  border-radius: 25px;
+  padding: 1rem;
+  border-right: 1px solid var(--projectsTitle);
+  border-top: 1px solid var(--projectsTitle);
+} */
 
 .indent {
   text-indent: 2rem;
@@ -579,7 +589,7 @@ footer a {
     padding: 0;
   }
 
-  .projects img {
+  .projectPhoto {
     width: 100%;
   }
 
@@ -652,7 +662,7 @@ footer a {
     text-indent: 2rem;
   } */
 
-  .projectItem img {
+  .projectPhoto {
     margin: 1rem auto;
     width: 100%;
 
