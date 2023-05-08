@@ -150,11 +150,6 @@ nav a {
 
 
 
-/* TODO: FINSIH LOGO AND H1 ALIGNMENT  */
-/* .navHeading {
-  display: inline-block;
-} */
-
 /* Remove hover color from icon */
 .fa-jedi {
   color: var(--icons);
@@ -162,11 +157,6 @@ nav a {
 .navHeading:hover {
   color: var(--accentThree);
 }
-/* 
-.siteLogo {
-  display: inline-block;
-} */
-
 
 
 .hoverAnimate:hover {
