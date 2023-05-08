@@ -151,15 +151,21 @@ nav a {
 
 
 /* TODO: FINSIH LOGO AND H1 ALIGNMENT  */
-/* #navHeading {
-  display: inline;
+/* .navHeading {
+  display: inline-block;
 } */
 
 /* Remove hover color from icon */
-#navHeading :first-child {
+.fa-jedi {
   color: var(--icons);
 }
-
+.navHeading:hover {
+  color: var(--accentThree);
+}
+/* 
+.siteLogo {
+  display: inline-block;
+} */
 
 
 
@@ -169,7 +175,7 @@ nav a {
 }
 
 nav a:hover,
-nav [class*="fa-"]:hover,
+nav [class*="fa-"]:hover :not(fa-jedi),
 footer a:hover {
   color: var(--accentThree);
 }
@@ -635,7 +641,8 @@ footer a {
   nav ul li:first-child {
     flex-basis: auto;
     text-align: left;
-    margin-right: auto;
+    margin-right: auto; 
+    flex-flow: row wrap;
   }
 
   /* Grid container  */
