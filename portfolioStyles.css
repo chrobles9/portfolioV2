@@ -84,7 +84,6 @@ p {
   margin: 0;
 }
 
-/* TODO: correct project h2 font size compare to aboutme and contactment font size */
 h2 {
   margin-bottom: calc(2.2rem * 1.5);
   margin-top: 2rem;
@@ -94,7 +93,7 @@ h2 {
 /*********** General links ***********/
 a {
   color: var(--accentThree);
-
+  text-decoration-style: double;
   /* timing for hover color transition */
   transition: all 0.5s ease 0s;
 }
@@ -587,6 +586,10 @@ footer a {
 
   .projectPhoto {
     width: 100%;
+  }
+
+  #aboutTitle {
+    font-size: 2rem;
   }
 
   .contact p:last-child {
