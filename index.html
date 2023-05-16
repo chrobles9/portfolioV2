@@ -86,13 +86,13 @@
       <!-- div for visual divider between content sections -->
       <div class="divider"></div>
       <!-- Intro with details about me -->
-      <section class="aboutMe maxWidth infoSection" id="about">
+      <section class="aboutMe maxWidth" id="about">
         <h2>About Me</h2>
         <p class="intro">
           👋🏽 Hello! I'm <span class="name">Carlos Robles.</span>
         </p>
         <p id="aboutTitle">Web Developer.</p>
-        <p class="textIndent">
+        <p>
           I aim to create enrichening user interactions with the use of multiple
           frontend and backend serverless web technologies.
         </p>
@@ -106,7 +106,7 @@
           Material Design Lite, WordPress + Joomla CMS systems and Three.JS.
         </p>
         <p>
-          Check out my latest
+          My latest
           <a href="https://github.com/chrobles9">Github Projects</a>.
         </p>
       </section>
@@ -117,21 +117,20 @@
       <!-- Projects Section -->
 
       <section id="projects" class="projects">
-        <div class="projectsContain maxWidth">
+        <div class="maxWidth">
           <h2>Projects</h2>
-
           <ul class="projectList">
             <!-- Grid Container  -->
             <!-- Project #1 -->
             <li class="projectItem">
               <div class="text">
                 <h4>Latest Project</h4>
-                <h3>Three.JS Solar Scroll</h3>
+                <h3>Solar System Scroll</h3>
                 <div class="projectContain">
                   <p class="projectInfo">
-                    Our Solar System developed with Three.JS, JavaScript and
-                    Vite. Multiple planet shapes were created on a canvas and
-                    animated to the user's scroll interaction.
+                    Solar System developed with Three.JS, JavaScript and Vite.
+                    Multiple planet shapes were created on a canvas and animated
+                    to the user's scroll interaction.
                   </p>
                   <p class="projectLinks">
                     <a href="https://chrobles9.github.io/Solar-System-3D/"
@@ -141,9 +140,7 @@
                       >Code</a>
                   </p>
                 </div>
-
                 <h4>Built with:</h4>
-
                 <!-- Container for flex -->
                 <ul class="techList">
                   <li>Three.js</li>
@@ -151,37 +148,29 @@
                   <li>Vite</li>
                 </ul>
               </div>
-
               <!-- Project Image  -->
-
               <img
                 src="media/images/projectScreenshot/projectOne.png"
                 alt="Screenshot of Three.js solar system project."
                 class="projectPhoto"
               />
             </li>
-
             <!-- Project #2 -->
             <li class="projectItem middleContain">
               <div class="text middleText">
                 <h4>E-Commerce Project</h4>
                 <h3>PopLocker</h3>
                 <div class="projectContain">
-
-                  <p class="projectInfo textIndent">
+                  <p class="projectInfo">
                     Inactive ecommerce site with functional shopping cart built
                     with PHP/MySQL and Bootstrap for styling.
                   </p>
                   <p class="projectLinks">
                     <a href="projects/poplocker/html/index.php">Live Site</a>
                     |
-                    <a href="https://github.com/chrobles9/popLocker"
-                    >Code</a>
-                  </p>  
-                  
-                  
+                    <a href="https://github.com/chrobles9/popLocker">Code</a>
+                  </p>
                 </div>
-
                 <h4>Built with:</h4>
                 <ul class="techList">
                   <li>Bootstrap</li>
@@ -189,7 +178,6 @@
                   <li>MySQL</li>
                 </ul>
               </div>
-
               <img
                 src="media/images/projectScreenshot/projectTwo.PNG"
                 alt="Screenshot of Project Title #2"
@@ -197,26 +185,26 @@
                 class="projectPhoto"
               />
             </li>
-
             <!-- Project #3 -->
             <li class="projectItem">
               <!-- textbox container  -->
               <div class="text">
                 <h4>Material Design Lite</h4>
                 <h3>Biltmore Website Companion</h3>
-                <p class="textIndent">
-                  *Under Construction* Companion Guide app for The Biltmore
-                  Estates property and location, built using Google's Material
-                  Design Lite technology and guidelines.
-                  <!-- TODO: Place live rendering and source on newline -->
-                  <a href="projects/biltmoreCompanion/index.html"
-                    >Live Rendering</a
-                  >
-                  |
-                  <a href="https://github.com/chrobles9/biltmoreGuide"
-                    >GitHub Code</a
-                  >.
-                </p>
+                <div class="projectContain">
+                  <p class="projectInfo">
+                    *Under Construction* Companion Guide app for The Biltmore
+                    Estates property and location, built using Google's Material
+                    Design Lite technology and guidelines.
+                  </p>
+                  <p class="projectLinks">
+                    <a href="projects/biltmoreCompanion/index.html"
+                      >Live Site</a>
+                    |
+                    <a href="https://github.com/chrobles9/biltmoreGuide"
+                      >Code</a>
+                  </p>
+                </div>
                 <h4>Built with:</h4>
                 <!-- Container for flex -->
                 <ul class="techList">
@@ -224,7 +212,6 @@
                   <li>Material Design Lite</li>
                 </ul>
               </div>
-
               <img
                 src="./media/images/projectScreenshot/projectThree.png"
                 alt="Screenshot of Biltmore website companion app."
@@ -272,7 +259,7 @@
     <footer>
       <ul>
         <li>
-          <span class="nameTitleContainer" href="#topDiv">
+          <span class="nameTitleContainer" href="#topDiv" aria-hidden="true">
             <p class="nameFooter">Carlos Robles</p>
             <span>&middot;</span>
             <p class="titleFooter">Web Developer</p>

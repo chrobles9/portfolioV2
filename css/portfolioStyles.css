@@ -6,6 +6,7 @@
   --mainBackground: #121212;
   /* contact me background color  */
   --contactBackground: #2f7ac5;
+  /* --contactBackground: #2f7ac5; */
   /* --contactBackground: #38bad1; */
   /* icons */
   --icons: #03c9c9;
@@ -146,9 +147,6 @@ nav a {
   display: block;
 }
 
-
-
-
 /* Remove hover color from icon */
 .fa-jedi {
   color: var(--icons);
@@ -157,10 +155,9 @@ nav a {
   color: var(--accentThree);
 }
 
-
 .hoverAnimate:hover {
-    /* links animate on Y axis on hover */
-    transform: translateY(-7px);
+  /* links animate on Y axis on hover */
+  transform: translateY(-7px);
 }
 
 nav a:hover,
@@ -424,20 +421,19 @@ footer a {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
   margin: 1rem auto;
-  padding: 1rem;
+  padding: 1.3rem;
   font-size: 1rem;
   line-height: 1.5;
-
 }
 
 .projectInfo {
   width: 100%;
   color: var(--white);
-
+  padding: 0 1rem;
 }
 
 .projectLinks {
-  /* margin: 1rem auto; */
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -453,8 +449,10 @@ footer a {
 }
 
 .projectPhoto {
-  margin: 2rem auto 4rem auto;
-  width: 90%;
+  /* margin: 2rem auto 4rem auto; */
+  margin: 0 auto;
+  /* width: 90%; */
+  width: 100%;
   display: block;
   border-radius: 25px;
   padding: 1rem;
@@ -519,7 +517,6 @@ footer a {
   }
 
   .aboutMe h2 {
-    text-align: left;
     font-size: 2.5rem;
   }
 
@@ -605,6 +602,18 @@ footer a {
     font-size: 2rem;
   }
 
+  .aboutMe {
+    padding: 4rem 2rem 2rem;
+  }
+
+  .projects {
+    padding: 2rem 2rem;
+  }
+
+  .contact {
+    padding: 2rem;
+  }
+
   .contact p:last-child {
     text-align: center;
   }
@@ -619,11 +628,11 @@ footer a {
     /* flex-flow: column wrap; */
   }
   .nameTitleContainer {
-    flex-flow: column wrap;
-    /* display: block; */
-    gap: 0;
-    line-height: 0.8;
-    font-size: 1.5rem;
+    /* flex-flow: column wrap; */
+    display: none;
+    /* gap: 0; */
+    /* line-height: 0.8; */
+    /* font-size: 1.5rem; */
   }
   .footerLogos {
     font-size: 1.5rem;
@@ -647,7 +656,7 @@ footer a {
   nav ul li:first-child {
     flex-basis: auto;
     text-align: left;
-    margin-right: auto; 
+    margin-right: auto;
     flex-flow: row wrap;
   }
 
@@ -696,7 +705,7 @@ footer a {
     text-align: right;
   }
 
-  .middleText p {
+  .projectContain {
     text-align: left;
   }
 
