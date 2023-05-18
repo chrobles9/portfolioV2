@@ -246,7 +246,6 @@ nav h1 [class*="fa-"] {
   margin: 1rem auto;
 } */
 
-
 .name {
   font-size: 2rem;
   font-family: var(--titleFont);
@@ -531,7 +530,6 @@ footer a {
     text-align: center;
   }
 
-  
   .hamburger,
   .close {
     display: block;
@@ -544,33 +542,33 @@ footer a {
     position: fixed;
     /* background-color: #1212129f; */
     /* border-radius: 0 0 25px 0; */
-    
+
     /* width: 100%; */
   }
-  
+
   .navName {
     display: block;
     padding-bottom: 2rem;
   }
-  
+
   .divider:first-of-type {
     height: 10px;
   }
-  
+
   nav {
     /* padding: 0; */
     /* border: 1px solid white; */
-    
+
     font-size: 2rem;
-    
+
     display: flex;
     flex-direction: column-reverse;
     /* background-color: var(--menuBackground); */
     /* background-color: #121212; */
     /* background-color: white; */
-    
+
     background: var(--linearGradient);
-    
+
     position: fixed;
     z-index: 1000;
     overflow: hidden;
@@ -582,33 +580,33 @@ footer a {
     transform: translateY(-100%);
     transition: transform 0.2s ease;
   }
-  
+
   nav a {
     display: block;
   }
-  
+
   nav:target {
     transform: translateY(0);
   }
-  
+
   nav ul {
     /* background-color: lightgreen; */
     /* border: 1px solid white; */
-    
+
     display: flex;
     width: 100%;
     flex-flow: column;
     gap: 1rem;
     padding: 0;
   }
-  
+
   #aboutTitle {
     font-size: 2rem;
   }
-  
+
   .aboutMe h2 {
     font-size: 2.5rem;
-  } 
+  }
 
   .aboutMe {
     padding: 4rem 2rem 2rem;
@@ -618,17 +616,14 @@ footer a {
     margin: 2rem auto;
   }
 
-
-
   .projectContain {
     padding: 1.3rem;
   }
-  
+
   .projectPhoto {
     width: 100%;
   }
-  
-  
+
   .projects {
     padding: 2rem 2rem;
   }
