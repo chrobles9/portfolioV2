@@ -484,6 +484,11 @@ footer a {
 }
 
 /* Styles for list of techologies project is built with */
+
+.techContain {
+  margin: 2rem auto;
+}
+
 .techList {
   display: flex;
   flex-flow: row wrap;
@@ -491,7 +496,6 @@ footer a {
   gap: 1rem;
   font-size: 1rem;
   list-style-type: none;
-  margin: 1rem auto;
 }
 
 #middleImage {
