@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <title>Carlos Robles | Web Developer :: Durham, NC</title>
     <!-- Meta Data -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content=" Carlos Robles is a Durham, NC based Web Developer.">
-    <meta name="author" content="Carlos Robles">
+      content=" Carlos Robles is a Durham, NC based Web Developer."
+    />
+    <meta name="author" content="Carlos Robles" />
     <!-- Google Fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Sanchez:ital@1&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
     <!-- Portfolio Styles -->
-    <link rel="stylesheet" href="css/portfolioStylesV1.css">
+    <link rel="stylesheet" href="css/portfolioStylesV1.css" />
     <link
       rel="icon"
       type="image/x-icon"
-      href="media/images/favicon/favicon.ico">
+      href="media/images/favicon/favicon.ico"
+    />
   </head>
 
   <body>
@@ -33,7 +36,7 @@
         <span class="sr-only">Open main menu</span>
         <span class="fas fa-bars" aria-hidden="true"></span>
       </a>
-      <nav id="navbar">
+      <nav id="navbar" role="navigation" aria-label="Main Menu">
         <ul>
           <li class="siteLogo">
             <h1 class="navName">
@@ -69,7 +72,11 @@
               <span class="fa-sr-only"> Github </span>
             </a>
           </li>
-          <li><a href="/media/resume/resumeWeb1.pdf" class="button hoverAnimate">Resume</a></li>
+          <li>
+            <a href="/media/resume/resumeWeb1.pdf" class="button hoverAnimate"
+              >Resume</a
+            >
+          </li>
         </ul>
         <a class="close" href="#" aria-label="Close main menu">
           <span class="sr-only">Close main menu</span>
@@ -89,13 +96,13 @@
         </p>
         <p id="aboutTitle">Web Developer.</p>
         <p class="aboutMeInfo">
-          I aim to create enrichening user interactions with the use of multiple
-          frontend and backend web technologies.
+          My passion for technology has led me to the world of frontend/backend
+          web technologies.
         </p>
         <p class="aboutMeInfo">
-          I am a developer and designer specializing in maintaining accessible
-          user experiences through the use of technologies such as JavaScript,
-          CSS, PHP and serverless design systems.
+          Developer and designer specializing in maintaining accessible user
+          experiences through the use of JavaScript, CSS, PHP and serverless
+          design systems.
         </p>
         <p class="aboutMeInfo">
           This page is a showcase of my works that include, but not limited to:
@@ -111,7 +118,6 @@
       <div class="divider"></div>
 
       <!-- Projects Section -->
-
       <section id="projects" class="projects">
         <div class="maxWidth">
           <h2>Projects</h2>
@@ -152,10 +158,11 @@
               <img
                 src="media/images/projectScreenshot/projectOne.png"
                 alt="Screenshot of Three.js solar system project."
-                class="projectPhoto">
+                class="projectPhoto"
+              />
             </li>
             <!-- Project #2 -->
-            <li class="projectItem middleContain">
+            <li class="projectItem">
               <div class="text middleText">
                 <h4>E-Commerce Project</h4>
                 <h3>PopLocker</h3>
@@ -181,7 +188,8 @@
                 src="media/images/projectScreenshot/projectTwo.PNG"
                 alt="Screenshot of Project Title #2"
                 id="middleImage"
-                class="projectPhoto">
+                class="projectPhoto"
+              />
             </li>
             <!-- Project #3 -->
             <li class="projectItem">
@@ -216,8 +224,42 @@
                 src="./media/images/projectScreenshot/projectThree.png"
                 alt="Screenshot of Biltmore website companion app."
                 class="projectPhoto"
-              >
+              />
             </li>
+
+            <!-- Project #4  -->
+            <li class="projectItem">
+              <div class="text middleText">
+                <h4>Responsive Design</h4>
+                <h3>Peak Training Fitness</h3>
+                <div class="projectContain">
+                  <p class="projectInfo">
+
+<!-- TODO: Finish description  -->
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae iste voluptatum neque officia libero enim provident sequi perspiciatis autem porro earum amet deleniti quos et, voluptas eius soluta odio!
+                  </p>
+                  <p class="projectLinks">
+                    <a href="projects/peakTrain/index.html">Live Site</a>
+                    |
+                    <a href="https://github.com/chrobles9/PeakTraining">Code</a>
+                  </p>
+                </div>
+                <h4>Built with:</h4>
+                <ul class="techList">
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>FlexBox</li>
+                </ul>
+              </div>
+              <img
+                src="media/images/projectScreenshot/projectFour.png"
+                alt="Screenshot of Peak Training Project"
+                id="middleImage"
+                class="projectPhoto"
+              />
+            </li>
+
           </ul>
         </div>
       </section>
