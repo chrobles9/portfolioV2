@@ -1,358 +1,300 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <title>Carlos Robles | Web Developer :: Durham, NC</title>
-    <!-- Meta Data -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content=" Carlos Robles is a Durham, NC based Web Developer."
-    />
-    <meta name="author" content="Carlos Robles" />
-    <!-- Google Fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Sanchez:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Portfolio Styles -->
-    <link rel="stylesheet" href="css/portfolioStylesV1.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="media/images/favicon/favicon.ico"
-    />
-  </head>
 
-  <body>
-    <!-- Visual divider  -->
-    <div id="topDiv"></div>
-    <header>
-      <!-- mobile menu icon -->
-      <a class="hamburger" href="#navbar" aria-label="Open main menu">
-        <span class="sr-only">Open main menu</span>
-        <span class="fas fa-bars" aria-hidden="true"></span>
+<head>
+  <title>Carlos Robles | Web Developer :: Durham, NC</title>
+  <!-- Meta Data -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content=" Carlos Robles is a Durham, NC based Web Developer." />
+  <meta name="author" content="Carlos Robles" />
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Sanchez:ital@1&display=swap"
+    rel="stylesheet" />
+  <!-- Portfolio Styles -->
+  <link rel="stylesheet" href="css/portfolioStylesV1.css" />
+  <link rel="icon" type="image/x-icon" href="media/images/favicon/favicon.ico" />
+</head>
+
+<body>
+  <!-- Visual divider  -->
+  <div id="topDiv"></div>
+  <header>
+    <!-- mobile menu icon -->
+    <a class="hamburger" href="#navbar" aria-label="Open main menu">
+      <span class="sr-only">Open main menu</span>
+      <span class="fas fa-bars" aria-hidden="true"></span>
+    </a>
+    <nav id="navbar" role="navigation" aria-label="Main Menu">
+      <ul>
+        <li class="siteLogo">
+          <h1 class="navName">
+            <a class="navHeading" href="index.html">
+              <span class="fa-solid fa-jedi" aria-hidden="true"></span>
+              Carlos Robles
+            </a>
+          </h1>
+        </li>
+        <li><a href="#about" class="hoverAnimate">About</a></li>
+        <li><a href="#projects" class="hoverAnimate">Projects</a></li>
+        <!-- <li><a href="#contact" class="hoverAnimate">Contact</a></li> -->
+        <li>
+          <a href="https://codepen.io/chrobles9" class="hoverAnimate">
+            <!-- icons hidden from screen readers -->
+            <span title="CodePen" class="fa-brands fa-codepen" aria-hidden="true"></span>
+            <span class="fa-sr-only"> CodePen </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/chrobles9" class="hoverAnimate">
+            <!-- icons hidden from screen readers -->
+            <span title="GitHub" class="fa-brands fa-square-github" aria-hidden="true"></span>
+            <span class="fa-sr-only"> Github </span>
+          </a>
+        </li>
+        <li>
+          <a href="/media/resume/resumeWeb1.pdf" class="button hoverAnimate">Resume</a>
+        </li>
+      </ul>
+      <a class="close" href="#" aria-label="Close main menu">
+        <span class="sr-only">Close main menu</span>
+        <span class="fas fa-times" aria-hidden="true"></span>
       </a>
-      <nav id="navbar" role="navigation" aria-label="Main Menu">
-        <ul>
-          <li class="siteLogo">
-            <h1 class="navName">
-              <a class="navHeading" href="index.html">
-                <span class="fa-solid fa-jedi" aria-hidden="true"></span>
+    </nav>
+  </header>
 
-                Carlos Robles
-              </a>
-            </h1>
-          </li>
-          <li><a href="#about" class="hoverAnimate">About</a></li>
-          <li><a href="#projects" class="hoverAnimate">Projects</a></li>
-          <!-- <li><a href="#contact" class="hoverAnimate">Contact</a></li> -->
-          <li>
-            <a href="https://codepen.io/chrobles9" class="hoverAnimate">
-              <!-- icons hidden from screenreaders -->
-              <span
-                title="CodePen"
-                class="fa-brands fa-codepen"
-                aria-hidden="true"
-              ></span>
-              <span class="fa-sr-only"> CodePen </span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/chrobles9" class="hoverAnimate">
-              <!-- icons hidden from screenreaders -->
-              <span
-                title="GitHub"
-                class="fa-brands fa-square-github"
-                aria-hidden="true"
-              ></span>
-              <span class="fa-sr-only"> Github </span>
-            </a>
-          </li>
-          <li>
-            <a href="/media/resume/resumeWeb1.pdf" class="button hoverAnimate"
-              >Resume</a
-            >
-          </li>
-        </ul>
-        <a class="close" href="#" aria-label="Close main menu">
-          <span class="sr-only">Close main menu</span>
-          <span class="fas fa-times" aria-hidden="true"></span>
-        </a>
-      </nav>
-    </header>
+  <main>
+    <!-- div for visual divider between content sections -->
+    <div class="divider"></div>
+    <!-- Intro with details about me -->
+    <section class="aboutMe maxWidth" id="about">
+      <h2>About</h2>
+      <p class="intro">
+        👋🏽 Hello! I'm <span class="name">Carlos Robles.</span>
+      </p>
+      <p id="aboutTitle">Web Developer.</p>
+      <p class="aboutMeInfo">
+        My passion for technology has led me to the world of frontend/backend
+        web technologies.
+      </p>
+      <p class="aboutMeInfo">
+        Developer and designer specializing in maintaining accessible user
+        experiences through the use of JavaScript, CSS, PHP and serverless
+        design systems.
+      </p>
+      <p class="aboutMeInfo">
+        This page is a showcase of my works that include, but not limited to:
+        Material Design Lite, WordPress + Joomla CMS systems and Three.JS.
+      </p>
+      <p class="aboutMeInfo">
+        My latest
+        <a href="https://github.com/chrobles9">Github Projects</a>.
+      </p>
+    </section>
 
-    <main>
-      <!-- div for visual divider between content sections -->
-      <div class="divider"></div>
-      <!-- Intro with details about me -->
-      <section class="aboutMe maxWidth" id="about">
-        <h2>About</h2>
-        <p class="intro">
-          👋🏽 Hello! I'm <span class="name">Carlos Robles.</span>
-        </p>
-        <p id="aboutTitle">Web Developer.</p>
-        <p class="aboutMeInfo">
-          My passion for technology has led me to the world of frontend/backend
-          web technologies.
-        </p>
-        <p class="aboutMeInfo">
-          Developer and designer specializing in maintaining accessible user
-          experiences through the use of JavaScript, CSS, PHP and serverless
-          design systems.
-        </p>
-        <p class="aboutMeInfo">
-          This page is a showcase of my works that include, but not limited to:
-          Material Design Lite, WordPress + Joomla CMS systems and Three.JS.
-        </p>
-        <p class="aboutMeInfo">
-          My latest
-          <a href="https://github.com/chrobles9">Github Projects</a>.
-        </p>
-      </section>
+    <!-- div for visual divider between content sections -->
+    <div class="divider"></div>
 
-      <!-- div for visual divider between content sections -->
-      <div class="divider"></div>
-
-      <!-- Projects Section -->
-      <section id="projects" class="projects">
-        <div class="maxWidth">
-          <h2>Projects</h2>
-          <ul class="projectList">
-            <!-- Grid Container  -->
-            <!-- Project #1 -->
-            <li class="projectItem">
-              <div class="text">
-                <h4>Latest Project</h4>
-                <h3>Solar System Scroll</h3>
-                <div class="projectContain">
-                  <p class="projectInfo">
-                    Solar System developed with Three.JS, JavaScript and Vite.
-                    Multiple planet shapes were created on a canvas and animated
-                    to the user's scroll interaction.
-                  </p>
-                  <p class="projectLinks">
-                    <a href="https://chrobles9.github.io/Solar-System-3D/"
-                      >Live Site</a
-                    >
-                    |
-                    <a href="https://github.com/chrobles9/Solar-System-3D"
-                      >Code</a
-                    >
-                  </p>
-                </div>
-                <div class="techContain">
-                  <h4>Built with:</h4>
-                  <!-- Container for flex -->
-                  <ul class="techList">
-                    <li>Three.js</li>
-                    <li>JavaScript</li>
-                    <li>Vite</li>
-                  </ul>
-                </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="maxWidth">
+        <h2>Projects</h2>
+        <ul class="projectList">
+          <!-- Grid Container  -->
+          <!-- Project #1 -->
+          <li class="projectItem">
+            <div class="text">
+              <h4>Latest Project</h4>
+              <h3>Solar System Scroll</h3>
+              <div class="projectContain">
+                <p class="projectInfo">
+                  Solar System developed with Three.JS, JavaScript and Vite.
+                  Multiple planet shapes were created on a canvas and animated
+                  to the user's scroll interaction.
+                </p>
+                <p class="projectLinks">
+                  <a href="https://chrobles9.github.io/Solar-System-3D/">Live Site</a>
+                  |
+                  <a href="https://github.com/chrobles9/Solar-System-3D">Code</a>
+                </p>
               </div>
-              <!-- Project Image  -->
-              <img
-                src="media/images/projectScreenshot/projectOne.png"
-                alt="Screenshot of Three.js solar system project."
-                class="projectPhoto"
-              />
-            </li>
-            <!-- Project #2 -->
-            <li class="projectItem">
-              <div class="text middleText">
-                <h4>E-Commerce Project</h4>
-                <h3>PopLocker</h3>
-                <div class="projectContain">
-                  <p class="projectInfo">
-                    Ecommerce project site with functional shopping cart built
-                    with PHP/MySQL funcitonality and Bootstrap for styling.
-                  </p>
-                  <p class="projectLinks">
-                    <a href="projects/poplocker/html/index.php">Live Site</a>
-                    |
-                    <a href="https://github.com/chrobles9/popLocker">Code</a>
-                  </p>
-                </div>
-                <h4>Built with:</h4>
-                <ul class="techList">
-                  <li>Bootstrap</li>
-                  <li>PHP</li>
-                  <li>MySQL</li>
-                </ul>
-              </div>
-              <img
-                src="media/images/projectScreenshot/projectTwo.PNG"
-                alt="Screenshot of Project Title #2"
-                id="middleImage"
-                class="projectPhoto"
-              />
-            </li>
-            <!-- Project #3 -->
-            <li class="projectItem">
-              <!-- textbox container  -->
-              <div class="text">
-                <h4>Build in Progress</h4>
-                <h3>Biltmore Website Companion</h3>
-                <div class="projectContain">
-                  <p class="projectInfo">
-                    Companion Guide app for The Biltmore Estates property web
-                    site, built using Google's Material Design Lite technology
-                    and guidelines.
-                  </p>
-                  <p class="projectLinks">
-                    <a href="projects/biltmoreCompanion/index.html"
-                      >Live Site</a
-                    >
-                    |
-                    <a href="https://github.com/chrobles9/biltmoreGuide"
-                      >Code</a
-                    >
-                  </p>
-                </div>
+              <div class="techContain">
                 <h4>Built with:</h4>
                 <!-- Container for flex -->
                 <ul class="techList">
-                  <li>CSS</li>
-                  <li>Material Design Lite</li>
-                </ul>
-              </div>
-              <img
-                src="./media/images/projectScreenshot/projectThree.png"
-                alt="Screenshot of Biltmore website companion app."
-                class="projectPhoto"
-              />
-            </li>
-
-            <!-- Project #4  -->
-            <li class="projectItem">
-              <div class="text middleText">
-                <h4>Responsive Design</h4>
-                <h3>Peak Training Fitness</h3>
-                <div class="projectContain">
-                  <p class="projectInfo">
-
-<!-- TODO: Finish description  -->
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae iste voluptatum neque officia libero enim provident sequi perspiciatis autem porro earum amet deleniti quos et, voluptas eius soluta odio!
-                  </p>
-                  <p class="projectLinks">
-                    <a href="projects/peakTrain/index.html">Live Site</a>
-                    |
-                    <a href="https://github.com/chrobles9/PeakTraining">Code</a>
-                  </p>
-                </div>
-                <h4>Built with:</h4>
-                <ul class="techList">
-                  <li>CSS</li>
+                  <li>Three.js</li>
                   <li>JavaScript</li>
-                  <li>FlexBox</li>
+                  <li>Vite</li>
                 </ul>
               </div>
-              <img
-                src="media/images/projectScreenshot/projectFour.png"
-                alt="Screenshot of Peak Training Project"
-                id="middleImage"
-                class="projectPhoto"
-              />
-            </li>
+            </div>
+            <!-- Project Image  -->
+            <img src="media/images/projectScreenshot/projectOne.png" alt="Screenshot of Three.js solar system project."
+              class="projectPhoto" />
+          </li>
+          <!-- Project #2 -->
+          <li class="projectItem">
+            <div class="text middleText">
+              <h4>E-Commerce Project</h4>
+              <h3>PopLocker</h3>
+              <div class="projectContain">
+                <p class="projectInfo">
+                  Ecommerce project site with functional shopping cart built
+                  with PHP/MySQL functionality and Bootstrap for styling.
+                </p>
+                <p class="projectLinks">
+                  <a href="projects/poplocker/html/index.php">Live Site</a>
+                  |
+                  <a href="https://github.com/chrobles9/popLocker">Code</a>
+                </p>
+              </div>
+              <h4>Built with:</h4>
+              <ul class="techList">
+                <li>Bootstrap</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <img src="media/images/projectScreenshot/projectTwo.PNG" alt="Screenshot of Project Title #2"
+              id="middleImage" class="projectPhoto" />
+          </li>
+          <!-- Project #3 -->
+          <li class="projectItem">
+            <!-- textbox container  -->
+            <div class="text">
+              <h4>Build in Progress</h4>
+              <h3>Biltmore Website Companion</h3>
+              <div class="projectContain">
+                <p class="projectInfo">
+                  Companion Guide app for The Biltmore Estates property web
+                  site, built using Google's Material Design Lite technology
+                  and guidelines.
+                </p>
+                <p class="projectLinks">
+                  <a href="projects/biltmoreCompanion/index.html">Live Site</a>
+                  |
+                  <a href="https://github.com/chrobles9/biltmoreGuide">Code</a>
+                </p>
+              </div>
+              <h4>Built with:</h4>
+              <!-- Container for flex -->
+              <ul class="techList">
+                <li>CSS</li>
+                <li>Material Design Lite</li>
+              </ul>
+            </div>
+            <img src="./media/images/projectScreenshot/projectThree.png"
+              alt="Screenshot of Biltmore website companion app." class="projectPhoto" />
+          </li>
 
-          </ul>
-        </div>
-      </section>
+          <!-- Project #4  -->
+          <li class="projectItem">
+            <div class="text middleText">
+              <h4>Gym Site Project</h4>
+              <h3>Peak Training Fitness</h3>
+              <div class="projectContain">
+                <p class="projectInfo">
+                  Home site created for a fictitious gym. Site layout and navigation menu adapts to the varying user
+                  screen sizes.
+                </p>
+                <p class="projectLinks">
+                  <a href="projects/peakTrain/index.html">Live Site</a>
+                  |
+                  <a href="https://github.com/chrobles9/PeakTraining">Code</a>
+                </p>
+              </div>
+              <h4>Built with:</h4>
+              <ul class="techList">
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>FlexBox</li>
+              </ul>
+            </div>
+            <img src="media/images/projectScreenshot/projectFour.png" alt="Screenshot of Peak Training Project"
+              id="middleImage" class="projectPhoto" />
+          </li>
 
-      <!-- div for visual divider between content sections -->
-      <div class="divider"></div>
+        </ul>
+      </div>
+    </section>
 
-      <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <div class="maxWidth">
-          <h2>Contact Me</h2>
-          <p>Interested in collaborating?</p>
-          <p>
-            Email:
-            <a href="mailto:hello@carlosrobles.dev">Hello@Carlosrobles.dev</a>
-          </p>
-          <p>Let's get started on a project and make the web a better place!</p>
-          <!-- email link  -->
+    <!-- div for visual divider between content sections -->
+    <div class="divider"></div>
 
-          <!-- <p>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="maxWidth">
+        <h2>Contact Me</h2>
+        <p>Interested in collaborating?</p>
+        <p>
+          Email:
+          <a href="mailto:hello@carlosrobles.dev">Hello@Carlosrobles.dev</a>
+        </p>
+        <p>Let's get started on a project and make the web a better place!</p>
+        <!-- email link  -->
+
+        <!-- <p>
             <a
               href="mailto:hello@carlosrobles.me"
               class="button email hoverAnimate"
               >Email Me</a
             >
           </p> -->
-          <a href="#topDiv" class="backToTop hoverAnimate">
-            <span class="fa-sharp fa-regular fa-circle-up"></span>
-            <span>Back to Top</span>
-            <span class="fa-sharp fa-regular fa-circle-up"></span>
+        <a href="#topDiv" class="backToTop hoverAnimate">
+          <span class="fa-sharp fa-regular fa-circle-up"></span>
+          <span>Back to Top</span>
+          <span class="fa-sharp fa-regular fa-circle-up"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- div for visual divider between content sections -->
+    <div class="divider"></div>
+  </main>
+
+  <footer>
+    <ul>
+      <li>
+        <span class="nameTitleContainer" href="#topDiv" aria-hidden="true">
+          <p class="nameFooter">Carlos Robles</p>
+          <span>&middot;</span>
+          <p class="titleFooter">Web Developer</p>
+        </span>
+      </li>
+      <div class="footerLogos">
+        <li>
+          <a href="https://codepen.io/chrobles9" class="hoverAnimate">
+            <!-- icons hidden from screenreaders -->
+            <span title="CodePen" class="fa-brands fa-codepen" aria-hidden="true"></span>
+            <span class="fa-sr-only"> CodePen </span>
           </a>
-        </div>
-      </section>
-
-      <!-- div for visual divider between content sections -->
-      <div class="divider"></div>
-    </main>
-
-    <footer>
-      <ul>
-        <li>
-          <span class="nameTitleContainer" href="#topDiv" aria-hidden="true">
-            <p class="nameFooter">Carlos Robles</p>
-            <span>&middot;</span>
-            <p class="titleFooter">Web Developer</p>
-          </span>
         </li>
-        <div class="footerLogos">
-          <li>
-            <a href="https://codepen.io/chrobles9" class="hoverAnimate">
-              <!-- icons hidden from screenreaders -->
-              <span
-                title="CodePen"
-                class="fa-brands fa-codepen"
-                aria-hidden="true"
-              ></span>
-              <span class="fa-sr-only"> CodePen </span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/chrobles9" class="hoverAnimate">
-              <!-- icons hidden from screenreaders -->
-              <span
-                title="GitHub"
-                class="fa-brands fa-square-github"
-                aria-hidden="true"
-              ></span>
-              <span class="fa-sr-only"> Github </span></a
-            >
-          </li>
-          <li>
-            <a href="mailto:hello@carlosrobles.dev" class="hoverAnimate">
-              <!-- icons hidden from screenreaders -->
-              <span
-                title="Email Me"
-                class="fa-solid fa-envelope"
-                aria-hidden="true"
-              ></span>
-              <span class="fa-sr-only">Email Me</span>
-            </a>
-          </li>
-        </div>
         <li>
-          <p class="copyright">
-            &copy; 2023 Carlos Robles. All rights reserved.
-          </p>
+          <a href="https://github.com/chrobles9" class="hoverAnimate">
+            <!-- icons hidden from screenreaders -->
+            <span title="GitHub" class="fa-brands fa-square-github" aria-hidden="true"></span>
+            <span class="fa-sr-only"> Github </span></a>
         </li>
-      </ul>
-    </footer>
-    <!-- JavaScript Files  -->
-    <script
-      src="https://kit.fontawesome.com/0895e4e4ea.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <li>
+          <a href="mailto:hello@carlosrobles.dev" class="hoverAnimate">
+            <!-- icons hidden from screenreaders -->
+            <span title="Email Me" class="fa-solid fa-envelope" aria-hidden="true"></span>
+            <span class="fa-sr-only">Email Me</span>
+          </a>
+        </li>
+      </div>
+      <li>
+        <p class="copyright">
+          &copy; 2023 Carlos Robles. All rights reserved.
+        </p>
+      </li>
+    </ul>
+  </footer>
+  <!-- JavaScript Files  -->
+  <script src="https://kit.fontawesome.com/0895e4e4ea.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
